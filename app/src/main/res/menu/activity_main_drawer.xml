@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:title="@string/menu_gallery" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:title="@string/menu_slideshow" />
+        <item
+            android:id="@+id/nav_attack3"
+            android:title="@string/menu_attack3" />
+        <item
+            android:id="@+id/nav_attack4"
+            android:title="@string/menu_attack4" />
+        <item
+            android:id="@+id/nav_attack5"
+            android:title="@string/menu_attack5" />
+        <item
+            android:id="@+id/nav_attack6"
+            android:title="@string/menu_attack6" />
+        <item
+            android:id="@+id/nav_attack7"
+            android:title="@string/menu_attack7" />
+        <item
+            android:id="@+id/nav_attack8"
+            android:title="@string/menu_attack8" />
+        <item
+            android:id="@+id/nav_attack9"
+            android:title="@string/menu_attack9" />
+        <item
+            android:id="@+id/nav_attack10"
+            android:title="@string/menu_attack10" />
+        <item
+            android:id="@+id/nav_android"
+            android:title="Android Security" />
+    </group>
+</menu>

@@ -1,0 +1,1225 @@
+<resources>
+    <string name="app_name">Security Attacks</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="nav_header_vertical_spacing">8dp</string>
+
+    <string name="menu_home">Security Attacks</string>
+    <string name="menu_gallery">Brute Force Attack</string>
+    <string name="menu_slideshow">Command Injection</string>
+    <string name="menu_attack3">CSRF</string>
+    <string name="menu_attack4">File Inclusion</string>
+    <string name="menu_attack5">File Upload</string>
+    <string name="menu_attack6">Insecure CAPTCHA</string>
+    <string name="menu_attack7">SQL Injection</string>
+    <string name="menu_attack8">Weak Session IDs</string>
+    <string name="menu_attack9">XSS(DOM)</string>
+    <string name="menu_attack10">CSP Bypass</string>
+    <string name="log">Logout</string>
+    <string name="head1"><br> What is Brute Force Attack?</br></string>
+    <string name="head2">
+        <br>A brute force attack is a trial-and-error method used to decode sensitive data. The most common applications for
+            brute force attacks are cracking passwords and cracking encryption keys (keep reading to learn more about encryption keys).
+            Other common targets for brute force attacks are API keys and SSH logins. Brute force password attacks are often carried out
+            by scripts or bots that target a websites login page.</br>\n
+<br>What differentiates brute force attacks from other cracking methods is that brute force attacks do not employ an intellectual
+    strategy they simply try using different combinations of characters until the correct combination is found. This is kind of like
+    a thieftrying to break into a combo safe by attempting every possible combination of numbers until the safe opens</br>.\n
+        <br> A brute force attack consists of an attacker submitting many passwords or passphrases with the hope of eventually guessing
+            a combination correctly. The attacker systematically checks all possible passwords and passphrases until the correct one
+            is found. Alternatively, the attacker can attempt to guess the key which is typically created from the password using a key
+            derivation function. This is known as an exhaustive key search.</br>.
+\n<br> When password-guessing, this method is very fast when used to check all short passwords, but for longer passwords other
+        methods such as the dictionary attack are used because a brute-force search takes too long. Longer passwords, passphrases
+        and keys have morepossible values and even more combinations, making them exponentially more difficult to crack than shorter
+        ones.</br>
+\n<br>Brute-force attacks work by calculating every possible combination that could make up a password and testing it to see if
+        it is the correct password. As the passwords length increases, the amount of time, the computational power required on average,
+        to find the correct password increases exponentially.</br>\n <br>A brute force attack is an attempt of decoding sensitive data
+        by trial-and-error. Breaking passwords and breaking encryption
+        keys are the two popular techniques for brute force attacks. API keys, and SSH logins are also rising targets for brute
+        force attacks. Brute force password attacks are sometimes performed by scripts or bots which target the login page of a webpage.
+        What separates brute force attacks from other methods of cracking is that attacks by brute force do not employ a detailed strategy. They actually attempt to use various character types until they find the correct combination. That is kind of like a robber attempting to break into a safe combo by seeking any imaginable number combination before the safe opens.</br>
+        \n<br>Manual brute force cracking is time-consuming, and most attackers use brute force attack software and tools to aid them.
+        With the tools at their disposal, attackers can attempt things like inputting numerous password combinations and accessing web
+        applications by searching for the correct session ID, among others.</br>
+    \n<br> Hackers use brute force attack to gain control over:</br>\n
+        <br>1.user accounts</br>\n
+        <br>2.administrative accounts</br>\n
+        <br>3.links</br>\n
+        <br>4.emails</br>\n
+        <br><b>Top brute force tools are:</b></br>\n\n
+        <br><b>1.Aircrack-ng—</b>can be used on Windows, Linux, iOS, and Android. It uses a dictionary of widely used passwords to breach wireless networks.</br>\n\n
+        <br><b>2.John the Ripper—</b>runs on 15 different platforms including Unix, Windows, and OpenVMS. Tries all possible combinations using a dictionary of possible passwords.</br>\n\n
+        <br><b>3.L0phtCrack— </b>a tool for cracking Windows passwords. It uses rainbow tables, dictionaries, and multiprocessor algorithms.</br>\n\n
+        <br><b>4.Hashcat— </b>works on Windows, Linux, and Mac OS. Can perform simple brute force, rule-based, and hybrid attacks.</br>\n\n
+        <br><b>5.DaveGrohl— </b>an open-source tool for cracking Mac OS. Can be distributed across multiple computers.</br>\n\n
+        <br><b>6.Ncrack— </b> a tool for cracking network authentication.It can be used on Windows, Linux, and BSD.</br>\n
+    </string>
+    <string name="head3"><br>Types of Brute Force Attack :</br></string>
+    <string name="head4"><br>1.Dictionary Brute Force Attack</br></string>
+    <string name="head5">A dictionary attack uses a dictionary of possible passwords and tests them all.
+        Instead of using an exhaustive key search, where they try every possible combination, the hacker begins from an assumption of common passwords.
+        They build a dictionary of passwords and iterate the inputs. With this approach, hackers eliminate having to attack websites randomly.
+        Instead, they can acquire a password list to improve their chances of success. Dictionary attacks often need a large number of attempts against multiple targets.
+    </string>
+    <string name="head6"><br>2.Simple Brute Force Attack</br></string>
+    <string name="head7">A simple brute force attack is used to gain access to local files, as there is no limit to the number of access attempts. The higher the scale of the attack, the more successful the chances are of entry. Simple brute force attacks circulate inputting all possible passwords one at a time.
+    </string>
+    <string name="head8"><br>3.Hybrid Brute Force Attack</br></string>
+    <string name="head9">The hybrid brute force attack combines aspects of both the dictionary and simple brute force attack. It begins with an external logic, such as the dictionary attack, and moves on to modify passwords akin to a simple brute force attack. The hybrid attack uses a list of passwords, and instead of testing every password, it will create and try small variations of the words in the password list, such as changing cases and adding numbers.
+    </string>
+    <string name="head10"><br>4.Reverse Brute Force Attack</br></string>
+    <string name="head11">Reverse brute force attack flips the method of guessing passwords on its head. Rather than guessing thepassword, it will use a generic one and try to brute force a username.
+    </string>
+    <string name="head12"><br>5.Credential Recycling</br></string>
+    <string name="head13">As it sounds, credential recycling reuses passwords. Since many institutions do not use password managers or have strict password policies, password reuse is an easy way to gain access to accounts. Because these cyberattacks depend entirely on lists of second-hand credentials gained from data breaches, they have a low rate of success. Its essential to update usernames and passwords after a breach regularly, to limit the effectiveness of stolen credentials.
+    </string>
+    <string name="head14"><br>6.Rainbow Table Attacks</br></string>
+    <string name="head15">Rainbow table attacks are unique as they do not target passwords instead, they are used to target the hash function, which encrypts the credentials. The table is a precomputed dictionary of plain text passwords and corresponding hash values. Hackers can then see which plain text passwords produce a specific hash and expose them. When a user enters a password, it converts into a hash value. If the hash value of the inputted password matches the stored hash value, the user authenticates. Rainbow table attacks exploit this process.
+    </string>
+    <string name="head16"><br>How to detect brute force attack</br></string>
+    <string name="head17">In order to identify Brute Force Attacks, you just need to watch out for unsuccessful attempts to log in to your site. As soon as you notice that within a short period of time, someone has unsuccessfully tried to log in to your site several times in a short period, this is already a signal for you.\n
+        <br>In addition, Brute Force Attacks might be happening if:</br>\n
+        <br>1. an unknown IP tried to enter your site several times from the same account.\n</br>
+        <br>2. someone tried to enter your site from a new location.\n</br>
+        <br>3. someone elses IP tried to login your site several times from different accounts.\n</br>
+        <br>If you noticed such things on your site, you need to quickly make some decisions so as not to lose control over your site.</br></string>
+    <string name="head22"><br>How to protect against brute force attacks:</br></string>
+    <string name="head23">Developers who manage authorization systems can take measures such as locking out IP addresses that have generated too many failed logins, and incorporating a delay in their password-checking software. A delay of even a few seconds can greatly weaken the effectiveness of a brute force attack.\n<br>Users of web services can decrease their vulnerability to brute force attacks by choosing longer, more complex passwords.It is also recommended to enable two-factor authentication and use unique passwords for each service. If an attacker is able to brute force a users password for one service, that attacker may try recycling the same login and password on many other popular services. This is known as credential stuffing.</br> <br>Users should also avoid entering passwords or personal information such as credit card numbers or banking information with any web service that doesnot protect their data with strong encryption keys.
+</br></string>
+    <string name="head18"><br>Advantages:</br></string>
+    <string name="head19">1.Brute force attacks are fairly easy to execute, and they often succeed. <br>2.It is fairly simplistic attack that does not require a lot of work to setup initiate.</br>
+</string>
+    <string name="head20"><br>Disadvantages:</br></string>
+    <string name="head21">1.Brute force attacks are very slow, as they may have to run through every possible combination of characters before achieving their goal.\n<br>2.Extends the amount of time needed to crack the code by a huge margin.</br></string>
+    <string name="head24"><br>Steps to perform Brute Force Attack:</br></string>
+    <string name="head25"><br>1.Start Apache and MySQL in XAMPP Control Panel</br></string>
+    <string name="head26"><br>2.Download and install Burpsuite. Click on open browser button</br></string>
+    <string name="head27"><br>3.Type localhost/dvwa/ on chrome of your burpsuite and login to your account.
+        Set the security level to low from DVWA Security button and then click on brute force button:</br></string>
+    <string name="head28"><br>4.On the intercept button in burpsuite. In chrome, type any wrong username and
+password and click on login and the burpsuite captures it.
+</br></string>
+    <string name="head29"><br>5.Select all and right click and click on send to intruder option.</br></string>
+    <string name="head30"><br>6.In Intruder click on Positions tab and on right side click on clear button. Select the username(i.e.abc)and click on add button and in the same way do it with password(i.e abcd)</br></string>
+    <string name="head31"><br>7.Select the attack type to  cluster bomb and then click on payloads tab and in payloads options
+        add the probable usernames </br></string>
+    <string name="head32"><br>8.Set the payload set option to 2  and add the probable passwords:</br></string>
+    <string name="head33"><br>9.Go to the options tab and Scroll the scrollbar and in Grep match section click on clear button
+        and add the welcome string :</br></string>
+    <string name="head34"><br>10.In options tab on right side click on start attack and then it keeps on trying various username
+        and password when it will find a right match the welcome checkbox will be filled click on that.</br></string>
+    <string name="head35"><br>11.Click on Response tab and then click on render it says welcome.</br></string>
+    <string name="head36"><br>12.Close attack window and turn the intercept off and then you can login to the account
+        because you know username and password.</br></string>
+    <string name="head37"><br>Prevention:</br></string>
+    <string name="head38"><br>1.Login attempts: Adding in login attempts will lock out a user for a specified amount of time that exceeds a
+    specified amount of attempts in inputting passwords/usernames.</br>\n\n
+<br>2.Captchas: These are the boxes with will show a box with warped text and asks the user what the text in the box is. This prevents bots
+    from executing the automated scripts that appear in brute force attacks, while still being easy for a human to pass by.</br>\n\n
+<br>3.Two-factor authentication (a type of multi-factor authentication): This adds a layer of security to the primary form of
+    authentication. Two-factor security requires two forms of authentication (as an example, to sign in to a new Apple device, users
+    need to put in their Apple ID along with a six-digit code that is displayed on another one of their devices previously marked
+    as trusted).</br>\n\n
+    <br>4.Increase password length: More characters equal more time to brute force crack.</br>\n\n
+    <br>5.Increase password complexity: More options for each character also increase the time to brute force crack.</br>
+</string>
+    <string name="head39"><br>References:</br></string>
+    <string name="head40"><br>1. https://phoenixnap.com/blog/brute-force-attack</br>\n
+        <br>2. "https://en.wikipedia.org/wiki/Brute-force_attack"</br>\n
+        <br>3. https://searchsecurity.techtarget.com/definition/brute-force-cracking</br>\n\n
+        <br><b>Videos to perform attack:</b></br></string>
+     <string name="abc"> <br>1. https://youtu.be/jrjaMAiQibw</br>\n
+        <br>2. https://youtu.be/01zIrG-FB9o</br>\n
+<br>3. https://youtu.be/QiccvCny-a4
+</br>\n</string>
+
+
+
+    <string name="head43"><br>What is Security Attack?</br></string>
+    <string name="head44"><br>      In computers and computer networks, an attack is any attempt to expose, alter, disable, destroy,
+        steal or gain information through unauthorized access to or make unauthorized use of an asset. A cyberattack is any offensive
+        maneuver that
+        targets computer information systems, infrastructures, computer networks, or personal computer devices.
+        An attacker is a person or process that attempts to access data, functions, or other restricted areas of the system
+        without authorization, potentially with malicious intent. Depending on the context, cyberattacks can be part of cyberwarfare
+        or cyberterrorism. A cyberattack can be employed by sovereign states, individuals, groups, society, or organizations, and
+        it may originate from an anonymous source. A product that facilitates a
+        cyberattack is sometimes called a cyberweapon.</br> \n
+<br>     A cyberattack may steal, alter, or destroy a specified target by hacking into a susceptible system.
+    Cyberattacks can range from installing spyware on a personal computer to attempting to destroy the infrastructure of entire
+    nations. Legal experts are seeking to limit the use of the term to incidents causing physical damage, distinguishing it
+    from the more routine data breaches and broader hacking activities.</br>\n
+<br>  Cyberattacks have become increasingly sophisticated and dangerous. User behavior analytics and SIEM can be used to help prevent
+    these attacks. Since the late 1980s cyberattacks have evolved several times to use innovations in information technology as
+    vectors for committing cybercrimes. In recent years, the scale and robustness of cyberattacks has increased rapidly,
+    as observed by the World Economic Forum in its 2018 report: "Offensive cyber capabilities are developing more rapidly than our ability to deal with hostile incidents."</br>\n
+<br>      An attack can be active or passive. An "active attack" attempts to alter system resources or affect their operation. A "passive attack" attempts to learn or make use of information from the system but does not affect system resources (e.g., wiretapping).
+    An attack can be perpetrated by an insider or from outside the organization.</br>\n
+<br>      An "inside attack" is an attack initiated by an entity inside the security perimeter (an "insider"), i.e.,
+    an entity that is authorized to access system resources but uses them in a way not approved by those who granted the
+    authorization.</br>\n
+<br>      An "outside attack" is initiated from outside the perimeter, by an unauthorized or illegitimate user of the system (an "outsider"). In the Internet, potential outside attackers range from amateur pranksters to organized criminals, international terrorists, and hostile governments.
+</br>\n
+
+    </string>
+    <string name="head45"><br>DVWA</br></string>
+    <string name="head46"><br>       Damn Vulnerable Web Application (DVWA) is a PHP/MySQL web application that is damn vulnerable. Its main goal is to be an aid for security professionals to test their skills and tools in a legal environment, help web developers better understand the processes of securing web applications and to aid both students and teachers to learn about web application security in a controlled class room environment.</br>\n
+<br>       The aim of DVWA is to practice some of the most common web vulnerabilities, with various levels of difficulty, with a simple straightforward interface. Please note, there are both documented and undocumented vulnerabilities with this software. This is intentional. You are encouraged to try and discover as many issues as possible.</br>
+</string>
+    <string name="head47"><br><b>Videos to download and install DVWA:</b></br></string>
+    <string name="head48"><br>1. https://youtu.be/_jtPeyl_KCc</br>\n
+        <br>2. https://youtu.be/PaB17Cc0dUg </br></string>
+    <string name="head49"><br>XAMPP</br></string>
+    <string name="head50"><br>XAMPP is the most popular PHP development environment.It is a completely free,
+        easy to install Apache distribution containing MariaDB, PHP,and Perl. The XAMPP open source
+        package has been set up to be incredibly easy to install and to use. it allows you to build
+        WordPress site offline, on a local web server on your computer. This simple and lightweight
+        solution works on Windows, Linux, and Mac – hence the “cross-platform” part.</br>\n\n
+        <br><b>Video to download and install Xampp:</b></br></string>
+    <string name="head51"><br>https://youtu.be/Xn_ksYiuMto</br></string>
+    <string name="head52"><br><b>Burp Suite</b></br></string>\n
+    <string name="head53"><br>Burp Suite Professional is one of the most popular penetration
+        testing and vulnerability finder tools,
+        and is often used for checking web application security. “Burp” as it is commonly known,
+        is a proxy-based tool used to
+        evaluate the security of web-based applications and do hands-on testing.
+        Burp Suite is very useful tool while conducting
+        Web application security testing. This tool is very easy to setup on any environment.
+        This tool also has a very interactive
+        interface which makes it very easy to use and master.</br>\n\n
+<br><b>Video to download and install Burp suite:</b></br></string>
+    <string name="head82"><br>https://youtu.be/_1v7OHaH1U4</br></string>
+    <string name="head54"><br> What is Command Injection Attack?</br></string>
+    <string name="head55"><br>     Command injection is an attack in which the goal is execution of arbitrary commands on the host
+        operating system via a vulnerable application. Command injection attacks are possible when an application passes unsafe user
+        supplied data (forms, cookies, HTTP headers etc.) to a system shell. In this attack, the attacker-supplied operating system
+        commands are usually executed with the privileges of
+        the vulnerable application. Command injection attacks are possible largely due to
+        insufficient input validation. This attack differs from Code Injection, in that code
+        injection allows the attacker to add their own code that is then executed by the
+        application. In Command Injection, the attacker extends the default functionality of
+        the application, which execute system commands.</br>\n
+<br>    In Command injection (also known as shell injection) user can typically fully compromise the application and all its data.
+    Very often, an attacker can leverage an OS command injection vulnerability to compromise other parts of the hosting infrastructure,
+    exploiting trust relationships to pivot the attack to other systems within the organization.
+</br></string>
+    <string name="head56"><br>   Command injection typically involves executing commands in a
+        system shell or other parts of the environment. The attacker extends the default
+        functionality of a vulnerable application, causing it to pass commands to the system
+        shell, without needing to inject malicious code. In many cases, command injection gives
+        the attacker greater control over the target system. Command injection attacks also, more
+        commonly referred to as operating system command injection
+        attacks exploit a programming flaw of executing system commands without proper input
+        validation, escaping, or sanitization, which may lead to arbitrary commands executed
+        by a malicious attacker.</br></string>
+    <string name="head57"><br>Ways of injecting OS commands</br></string>\n
+    <string name="head58"><br>A variety of shell metacharacters can be used to perform command
+        injection attacks. A number of characters function as command separators, allowing
+        commands to be chained together. The following command separators work on both Windows
+        and Unix-based systems:</br>\n
+        <br>• &amp; </br>\n
+        <br>• &amp;&amp;</br>\n
+        <br>• |</br>\n
+        <br>• ||</br>\n
+        <br>The following command separators work only on Unix-based systems:</br>\n
+        <br> • ;</br>\n
+        <br> • Newline(0x0a)</br>
+</string>
+    <string name="head59"><br>Command Injection Methods</br></string>
+    <string name="head60"><br>
+Here are some of the vulnerabilities that commonly lead to a command injection attack.</br>\n\n
+<br><b>1.Arbitrary Command injection</b></br>\n
+<br>Some applications may enable users to run arbitrary commands, and run these commands as is to
+    the underlying host.</br>\n\n
+        <br><b>2.Arbitrary file uploads</b></br>\n
+<br>If an application allows users to upload files with arbitrary file extensions,
+        these files could include malicious commands. On most web servers, placing such files
+    in the webroot will result in command injection.</br>\n\n
+        <br><b>3.Insecure serialization</b></br>\n
+<br>Server-side code is typically used to deserialize user inputs. If deserialization is
+    performed without proper verification, it can result in command injection.</br>\n\n
+        <br><b>4.Server-side template injection (SSTI)</b></br>\n
+<br>Many web applications use server-side templates to generate dynamic HTML responses.
+        This makes it possible for attackers to insert malicious server-side templates.
+        SSTI occurs when user input is embedded in a template in an insecure manner, and code
+    is executed remotely on the server.</br>\n\n
+<br><b>5.XML external entity injection (XXE)</b></br>\n
+<br>XXE occurs in applications that use a poorly-configured XML parser to parse user-controlled
+        XML input. This vulnerability can cause exposure of sensitive data, server-side
+    request forgery (SSRF), or denial of service attacks.</br>
+</string>
+    <string name="head61"><br>Adantages:</br></string>
+    <string name="head62"><br>The attacker gets greater control over the target system.</br></string>
+    <string name="head63"><br>Disadvantages:</br></string>
+    <string name="head64"><br>Depending on the setup of the application and the process configuration that executes it, a
+        command injection vulnerability could lead to privilege escalation of the process or to spawn a remote reverse shell that
+        allows complete interaction by a malicious party.
+    </br>\n</string>
+    <string name="head65"><br>Steps to perform Command Injection Attack:</br></string>
+    <string name="head66"><br><b>Security level : low</b></br>\n
+<br>1.Set the security level to low from DVWA Security button and then click on Command Injection button.
+    Type 127.0.0.1 in ip address and submit it, you will see following output:
+</br></string>
+    <string name="head67"><br>2.Type 127.0.0.1 &amp; dir in ip address and submit it, you will see
+        following output:</br></string>
+    <string name="head68"><br>3.Type 127.0.0.1 &amp; dir..\..\in ip address and submit it, you will see
+        following output.</br>
+    </string>
+    <string name="head69"><br> 4.Type 127.0.0.1 &amp; dir..\..\config in ip address and submit it, you will see following
+        output.</br></string>
+    <string name="head70"><br>5.Type 127.0.0.1 &amp; type..\..\config\config.inc.php in ip address and submit it, you will
+        see following output.</br></string>
+    <string name="head71"><br>6.Type 127.0.0.1 &amp;copy..\..\config\config.inc.php new php n ip address
+        and submit it, you will see following output</br></string>
+    <string name="head72"><br> 7.The file config.inc.php has been copied lets try to read the data.
+        Type newphp instead of # in the link above you will see that we got database information.</br></string>
+    <string name="head73"><br><b>Security level : medium</b></br>\n
+         <br>1.Set the security level to medium from DVWA Security button and then click on Command Injection button.
+             Type 127.0.0.1 in ip address and submit it, you will see following output:
+         </br></string>
+    <string name="head74"><br>2.Type 127.0.0.1 | dir  in ip address and submit it, you will see following output. </br></string>
+    <string name="head75"><br>3.Type 127.0.0.1 | dir..\..\ in ip address and submit it, you will see following output.</br></string>
+    <string name="head76"><br>4.Type 127.0.0.1 | dir..\..\config in ip address and submit it, you will see following output.</br></string>
+    <string name="head77"><br>5.Type 127.0.0.1|| type..\..\config\config.inc.php in ip address and submit it, you will see
+        following output.</br></string>
+
+    <string name="head78"><br>6.Type 127.0.0.1| copy..\..\config\config.inc.php new in ip address and submit it,
+        you will see following output.</br>\n</string>
+    <string name="head79"> <br>7.The file config.inc.php has been copied lets try to read the data.
+        Type new instead of # in the link above you will see that we got database information.</br>\n
+                <br><b>For level high just remove spaces between or operator and 127.0.0.1</b></br>
+    </string>
+    <string name="head80"><br>Prevention of Command Injection Attack:</br></string>
+    <string name="head81"><br>By far the most effective way to prevent OS command injection vulnerabilities is to never call out
+        to OS commands from application-layer code. In virtually every case, there are alternate ways of implementing the required
+        functionality using safer platform APIs.</br>\n
+    <br>If it is considered unavoidable to call out to OS commands with user-supplied input, then strong input validation must be
+    performed.</br>\n<br>Some examples of effective validation include:</br>\n
+        <br>• Validating against a whitelist of permitted values.</br>\n
+        <br>• Validating that the input is a number.</br>\n
+        <br>• Validating that the input contains only alphanumeric characters, no other syntax or whitespace.</br>\n
+<br>Never attempt to sanitize input by escaping shell metacharacters. In practice, this is just too error-prone and vulnerable
+    to being bypassed by a skilled attacker.
+</br></string>
+    <string name="head83"><br>References:</br></string>
+    <string name="head84"><br>1. https://owasp.org/www-community/attacks/Command_Injection#:~:text=Command%20injection%20is%20an%20attack,.)%20to%20a%20system%20shell.</br>\n\n<br>2. https://www.imperva.com/learn/application-security/command-injection</br></string>
+    <string name="head85"><br>Videos to perform attack:</br></string>
+    <string name="head86"><br>https://youtu.be/0ln7nsCQlaI</br>\n</string>
+
+
+    <string name="head87"><br> What is CSRF Attack?</br></string>
+    <string name="head89"><br><p>     Cross-site request forgery, also known as one-click attack or session riding and abbreviated as
+        CSRF (sometimes pronounced sea-surf) or XSRF, is a type of malicious exploit of a website where unauthorized commands are
+        submitted from a user that the web application trusts. It is an attack that forces an end user to execute unwanted actions on
+        a web application in which they are currently authenticated. With a little help of social engineering (such as sending a link
+        via email or chat), an attacker may trick the users of a web application into executing actions of the attackers choosing.
+        If the victim is a normal user, a successful CSRF attack can force the user to perform state changing requests like
+        transferring funds, changing their email address, and so forth. If the victim is an administrative account, CSRF can
+        compromise the entire web application.</p> </br>\n
+<br>    CSRF is an attack that tricks the victim into submitting a malicious request. It inherits the identity and privileges of the victim
+    to perform an undesired function on the victims behalf. For most sites, browser requests automatically include any credentials
+    associated with the site, such as the users session cookie, IP address, Windows domain credentials, and so forth. Therefore,
+    if the user is currently authenticated to the site, the site will have no way to distinguish between the forged request sent by
+    the victim and a legitimate request sent by the victim.</br>\n
+<br>    CSRF attacks target functionality that causes a state change on the server, such as changing the victims
+    email address or password, or purchasing something. Forcing the victim to retrieve data does not benefit an attacker because
+    the attacker does not receive the response.</br>\n
+<br>An attackers aim for carrying out a CSRF attack is to force the user to submit a
+    state-changing request. Examples include:</br>\n
+
+        <br>• Submitting or deleting a record.</br>\n
+        <br>• Submitting a transaction.</br>\n
+        <br>• Purchasing a product.</br>\n
+        <br>• Changing a password.</br>\n
+        <br>• Sending a message.</br>\n\n
+
+<br><b>What is the impact of a CSRF attack?</b></br>\n
+<br>In a successful CSRF attack, the attacker causes the victim user to carry out an action
+        unintentionally. For example, this might be to change the email address on their account,
+        to change their password, or to make a funds transfer. Depending on the nature of the
+        action, the attacker might be able to gain full control over the users account.
+        If the compromised user has a privileged role within the application, then the attacker
+        might be able to take full control of all the applications data and functionality.</br>
+</string>
+
+
+    <string name="head90"><br>How to detect CSRF attack?</br></string>
+    <string name="head91"><br>A CSRF attack can occur when an authenticated user moves to a malicious website while still logged into
+        the target web application. Essentially, CSRF is an exploitation of the trust a browser has in an authenticated user.
+        Such an attack is relatively easy to set up and, worryingly, can be difficult to detect.</br></string>
+    <string name="head92"><br>Advantages:</br></string>
+    <string name="head93"><br>1. CSRF attacks can be used on a huge array of sites. </br>\n
+<br>2. If a site allows data to be altered on the user side, then it is a potential target for an attacker. </br>\n
+<br>3. The attacker can gain full control over the users account</br>\n
+<br>4. Simple to implement.
+</br></string>
+    <string name="head94"><br>Disadvantages:</br></string>
+    <string name="head95"><br>1.All forms must output the hidden field in HTML.</br>\n
+<br>2. The page must know in advance that it requires the CSRF token so it can include it in the page content so all pages
+    must contain the token value somewhere, which could make it time consuming to implement for a large site.
+</br></string>
+    <string name="head96"><br>Steps to Perform CSRF Attack:</br></string>
+    <string name="head97"><br>1.Set the security level to low and click on CSRF button, type any password and click on
+        change then copy the url above.</br></string>
+    <string name="head98"><br>2.Paste the url in a notepad file, Open your burpsuite click on decoder tab, type password_new in
+        that space then click on encode as url.</br></string>
+    <string name="head99"><br>3.Copy the code and paste in notepad file.</br></string>
+    <string name="head100"><br>4.Instead of the password(1234) you can type any password and encode it.
+    </br></string>
+    <string name="head101"><br>5.Copy the encoded url on the place of 1234 both times. In the same way you have to
+        encode password_conf and change and copy to notepad file.Then copy the url.</br></string>
+    <string name="head102"><br>6.Paste the url on your link. </br></string>
+    <string name="head103"><br>7.Password will get changed.</br></string>
+
+    <string name="head104"><br>Prevention:</br></string>
+    <string name="head105"><br>1. Preventing CSRF requires the inclusion of an unpredictable
+        token in the body or URL of each HTTP request. Such tokens should at a minimum be unique
+        per user session, but can also be unique per request.\n</br>
+<br>2. The preferred option is to include the unique token in a hidden field.
+    The unique token can also be included in the URL itself, or a URL parameter.</br>\n
+        <br>3. Check Referrer field of each request.</br>\n
+        <br>4. Use Captcha on all critical page.</br>\n
+        <br>5. Implement an Anti-CSRF token.</br>
+</string>
+    <string name="head106"><br>References:</br></string>
+    <string name="head107"><br>1. https://www.synopsys.com/glossary/what-is-csrf.html</br>\n
+            <br>2. https://portswigger.net/web-security/csrf</br>\n
+<br>3. https://en.wikipedia.org/wiki/Cross-site_request_forgery</br>\n\n
+            <br><b>Videos to perform attack:\n </b>
+</br></string>
+    <string name="head108"><br>What is File Inclusion Attack?</br></string>
+    <string name="head109"><br>A file inclusion vulnerability is a type of web vulnerability that is most commonly found to affect
+        web applications that rely on a scripting run time. This issue is caused when an application builds a path to executable code
+        using an attacker-controlled variable in a way that allows the attacker to control which file is executed at run time. A file
+        include vulnerability is distinct from a generic directory traversal attack, in that directory traversal is a way of gaining
+        unauthorized file system access, and a file inclusion vulnerability subverts how an application loads code for execution.
+        Successful exploitation of a file inclusion vulnerability will result in remote code execution on the web server that runs
+        the affected web application. An attacker can use remote code execution to create a web shell on the web server, which can be
+        used for website defacement.</br>\n
+        <br>A file inclusion vulnerability allows an attacker to access unauthorized or sensitive files available on the web server
+            or to execute malicious files on the web server by making use of the ‘include’ functionality. This vulnerability is mainly
+            due to a bad input validation mechanism, wherein the users input is passed to the file include commands without proper
+            validation. The impact of this vulnerability can lead to malicious code execution on the server or reveal data present in
+            sensitive files, etc.
+</br></string>
+    <string name="head110"><br>Types of file inclusion attack:</br></string>
+    <string name="head111"><br><b>1.Remote file inclusion Attack:</b></br>\n
+<br>Remote file inclusion (RFI) is an attack targeting vulnerabilities in web applications that dynamically reference external scripts.
+    The perpetrators goal is to exploit the referencing function in an application to upload malware (e.g., backdoor shells) from
+    a remote URL located within a different domain.</br>\n
+<br>Remote file inclusion (RFI) occurs when the web application downloads and executes a remote file.
+    These remote files are usually obtained in the form of an HTTP or FTP URI as a user-supplied
+    parameter to the web application.
+</br></string>
+    <string name="info"><br><b>2.Local file inclusion Attack:</b></br>\n
+        <br>    Local file inclusion (LFI) is similar to a remote file inclusion vulnerability except instead of including remote files, only local files i.e. files on the current server can be included for execution. This issue can still lead to remote code execution by including a file that contains attacker-controlled data such as the web servers access logs.</br>\n
+        <br>    Usually the path of the file you want to open is sent to a function which returns the content of the file as a string, or prints it on the current web page, or includes it into the document and parses it as part of the respective language.</br>\n
+        <br><b>How dangerous is LFI?</b></br>\n
+        <br>LFI can be dangerous, especially if combined with other vulnerabilities – for example, if the attacker is able to upload malicious files to the server. Even if the attacker cannot upload files, they can use the LFI vulnerability together with a directory traversal vulnerability to access sensitive information. </br>
+    </string>
+    <string name="head112">
+            <br><b>What You Should NOT Do to Avoid LFI Vulnerabilities:</b></br>\n
+    <br>1.Blacklisting filenames; attackers have a variety of filenames to include for information
+        disclosure or code execution. Maintaining such a list is practically not possible.
+        It also is not enough to blacklist files commonly used for testing against LFI like
+        /etc/passwd or /etc/hosts.</br>\n
+        <br>2.Using user input as a source for file inclusions.</br>\n
+        <br>3.Removing or blacklisting character sequences. There are known bypasses for removing or
+    blacklisting those.</br>\n
+<br>4.Encoding the file path with base64, bin2hex or similar functions as this can be reversed relatively easily by an attacker.
+</br></string>
+    <string name="head113"><br>How to detect File Inclusion Attack:</br>\</string>
+    <string name="head114"><br>To identify RFI vulnerabilities in a web application, you need a vulnerability scanner that can
+        accurately map out the entire application, no matter what technology it is built with, and then accurately identify which
+        attack surfaces are vulnerable. You need Netsparker. Netsparker is the most accurate web security scanner on the market.</br>\n
+<br>One other technique that can be used to detect potential RFI attacks (when the application never legitimately references files
+    offsite) is to inspect the domain name/hostname specified within the parameter payload and then compare it to the Host header
+    data submitted in the request. If the two items match, then this would allow the normal fully qualified referencing back to the
+    local site while simultaneously deny offsite references.</br>\n
+<br>The most efficient way to detect LFI is by using an automated vulnerability scanner. You can of course detect such
+    vulnerabilities through manual penetration testing but it takes a lot more time and resources.
+</br></string>
+    <string name="head115"><br>Advantages:</br></string>
+    <string name="head116">
+        <br>1. Running a malicious code. </br>\n
+        <br>2. Exhibiting the contents of your file.</br>\n
+        <br>3. Run or expose files on a web server.</br>\n
+        <br>4. Expose sensitive information.</br>\n
+        <br>5. Providing a direct control over the target website.</br>\n
+        <br>6. It can get whole hosting server for almost no-effort.</br>
+</string>
+    <string name="head117"><br>Steps to Perform File Inclusion Attack:</br></string>
+    <string name="head118"><br>1.Set the security level to low and click on File inclusion button</br></string>
+    <string name="head119"><br>2. If we click in the links file1.php, file2.php, file3.php and look the the generated URL,
+        we can see that the filename is inserted in each page.
+        Lets tamper with the URL: http://192.168.231.110/vulnerabilities/fi/?page=../../../../../etc/passwd</br></string>
+    <string name="head120"><br>Prevention:</br></string>
+    <string name="head121"> <br>1.ID assignation – save your file paths in a secure database and give an ID for every single one,
+        this way users only get to see their ID without viewing or altering the path.</br>\n
+        <br>2.Whitelisting  – use verified and secured whitelist files and ignore everything else.</br>\n
+        <br>3.Use databases – do not include files on a web server that can be compromised, use a database instead.</br>\n
+        <br>4.Better server instructions – make the server send download headers automatically instead of executing files in
+            a specified directory.</br>\n
+        <br>5.Never use arbitrary input data in a literal file include request.</br>\n
+        <br>6.Use a filter to thoroughly scrub input parameters against possible file inclusions.</br>\n
+        <br>7.Build a dynamic whitelist.</br>
+    </string>
+    <string name="head122"><br>References:</br></string>
+    <string name="head123"><br>1. https://en.wikipedia.org/wiki/File_inclusion_vulnerability</br>\n
+<br>2. https://resources.infosecinstitute.com/topic/file-inclusion-attacks</br>\n
+        <br>3. https://www.acunetix.com/blog/articles/local-file-inclusion-lfi</br>\n\n
+        <br><b>Videos to perform attack:</b></br></string>
+      <string name="abc8">  <br>1. https://youtu.be/F9OxaEnez_E</br>\n
+<br>2. https://youtu.be/nYl1kFzSMM0
+</br>\n</string>
+
+
+
+    <string name="head124"><br>What is File Upload Attack?</br></string>\n
+    <string name="head125"><br>File upload vulnerability is one of the major problems within web-based
+        applications. In many web servers, this vulnerability depends entirely on purpose, that allows an
+        attacker to upload a file with malicious codes in it, that thus could be executed on the server.
+    </br>\n
+
+<br>Many WordPress websites give visitors the option to upload files for various purposes. For instance,
+    a job portal would allow a user to upload a resume and certificates. A banking website would allow
+    you to upload supporting documentation such as identity, address, and income proof. When a file is
+    uploaded to your site, WordPress check the file and store it in a specific folder called the Uploads
+    directory. Generally, the documents or some file being uploaded by file uploaders are in a format
+    that cannot execute any commands without showing any error messages.</br>\n
+<br>For images, the accepted formats include png and jpeg. For documents, the formats include PDF and
+        Docx. As we said, these formats are non-executable which means even if there malicious code in
+    them, the code cannot execute any command on your site.</br>\n
+<br>Generally, the upload fields on a website accept only non-executable files. But if it malfunctions,
+    it can start accepting unrestricted file uploads.</br>\n
+<br>Hackers can take advantage of this and upload executable codes in file formats such as PHP file,
+    JavaScript, and exe. These files can run commands wreaking havoc on your website.</br>\n
+
+<br>If the file that is uploaded has the same filename and extension as an existing file on the server, the
+        newly uploaded file may overwrite the previous file. If the attacker succeeds in overwriting a
+        system file, the new file can be used to launch a potentially harmful server-side attack.
+        This may allow the attacker to manipulate the security and privacy settings of the server or
+        stop the functioning of the server entirely. File upload sometimes restricts the user with a
+        certain file size. If the attacker is able to manipulate the file-size restriction, using an
+        hacking tool, then he might cause a Buffer-overflow or DoS (Denial of Service) attack by uploading
+    an extremely large file size to crash the webserver.</br>
+</string>
+    <string name="head126"><br>Types of File Upload Vulnerability:</br></string>
+    <string name="head127"><br>    A local file upload vulnerability is a vulnerability where an application allows a user to upload
+        a malicious file directly which is then executed.</br>
+<br>    A remote file upload vulnerability is a vulnerability where an application uses user input to fetch a remote file from a site
+        on the Internet and store it locally. This file is then executed by an attacker.
+</br></string>
+    <string name="head128"><br>Advantages:</br></string>
+    <string name="head129">
+        <br>1.Attacker can execute the file and gain access to the website. </br>\n
+        <br>2.Once an attacker has gained access, they can compromise the restricted data or even perform denial
+    of service attacks.</br>\n
+        <br>3.Allows an attacker to upload a file with malicious codes in it, that thus could be executed on
+    the server.</br>\n
+        <br>4.Takeover of the victims entire system through a server-side attack.</br>\n
+        <br>5.The hacker can either gain administrative rights on webserver or if hacker has uploaded a .js or
+    .php reverse-shell script then this may lead to unauthorized access to local files as well as system</br>\n
+        <br>6.Gaining control over the server or deletion of records.</br></string>
+    <string name="head130"><br>Steps to Perform a File Upload Attack:</br></string>
+    <string name="head131"><br><b>Security level : low</b></br>\n
+<br>1.Set the security level to low and open File upload button choose a file shell.php and try to upload it.
+</br></string>
+
+    <string name="head133"><br>2.Copy../../hackable/uploads/Shell.php and paste it instead of # in url and
+        run the fil.</br></string>
+    <string name="head134"><br>3.In this level the security was nothing thats why we uploaded shell.php
+        file easily</br></string>
+    <string name="head135"><br><b>Security level : medium</b></br>\n
+<br>1.Set the security level to medium and when you try to upload a php file you get an error
+</br></string>
+    <string name="head136"><br>2.So now we can open the browser of burpsuite login to your account open
+        File upload button and choose shell1.php file turn the intercept on and burpsuite captures it.
+    </br></string>
+
+    <string name="head137"><br>3.Change the content type to image/png and forward the request, the file will be uploaded.
+    You can access the file as shown in low level.
+</br></string>
+    <string name="head138"><br>Preventions:</br></string>
+    <string name="head139"><br>1.Only allow specific file types– By limiting the list of allowed file types, you can avoid
+        executables, scripts and other potentially malicious content from being uploaded to your application.</br>\n<br>
+        2.Verify file types – In addition to restricting the file types, it is important to ensure that no files are ‘masking’ as
+    allowed file types. For instance, if an attacker were to rename an .exe to .docx, and your solution relies entirely on the file
+    extension, it would bypass your check as a Word document which in fact it is not. Therefore, it is important to verify file types
+    before allowing them to be uploaded.</br>\n
+<br>3.Scan for malware – To minimize risk, all files should be scanned for malware. We recommend multi-scanning files with multiple
+    anti-malware engines (using a combination of signatures, heuristics, and machine learning detection methods) in order to get the
+    highest detection rate and the shortest window of exposure to malware outbreaks.</br>\n
+<br>4.Remove possible embedded threats – Files such as Microsoft Office, PDF and image files can have embedded threats in hidden
+    scripts and macros that are not always detected by anti-malware engines. To remove risk and make sure that files contain no hidden
+    threats, it is best practice to remove any possible embedded objects by using a methodology called content disarm and
+    reconstruction (CDR).</br>\n
+<br>5.Set a maximum name length and maximum file size – Make sure to set a maximum name length (restrict allowed characters
+    if possible) and file size in order to prevent a potential service outage</br>\n
+<br>6.Store uploaded files outside the web root folder - The directory to which files are uploaded should be outside of the website/’s
+    public directory so that the attackers cannot execute the file via the assigned path URL.</br>
+</string>
+    <string name="head140"><br>References:</br></string>
+    <string name="head141"><br>1. https://www.malcare.com/blog/file-upload-vulnerability/</br>\n
+<br>2. https://www.valencynetworks.com/kb/file-upload-vulnerability-attacks.html</br>\n
+<br>3. https://www.acunetix.com/websitesecurity/upload-forms-threat/</br>\n\n
+        <br><b>Videos to perform attack:</b></br>  </string>
+<string name="abc6"><br>1. https://youtu.be/ZAjCl2hDoEY</br>\n
+<br>2. https://youtu.be/VS9iILo2_ic
+</br>\n</string>
+
+
+
+
+    <string name="head142"><br>What is Insecure CAPTCHA?</br></string>
+    <string name="head143"><br>CAPTCHA ("Completely Automated Public Turing test to tell Computers and Humans Apart") is a type of challenge–response test used in computing to determine whether or not
+        the user is human.This form of CAPTCHA requires someone to correctly evaluate and enter a sequence
+        of letters or numbers perceptible in a distorted image displayed on their screen. Because the test
+        is administered by a computer,in contrast to the standard Turing test that is administered by a
+        human,a CAPTCHA is sometimes described as a reverse Turing test.</br>\n
+<br>In other words, CAPTCHA determines whether the user is real or a spam robot. CAPTCHAs stretch or
+    manipulate letters and numbers, and rely on human ability to determine which symbols they are.
+    CAPTCHAs have been one of the important mechanisms to protect web applications form from user boot,
+    automated form submissions,email spam and preventing comment spam. To have an impelling protection
+    against automated form submissions,it is necessary to build a strong CAPTCHA ecosystem. A weak
+    implementation can only provide a false sense of security.
+</br></string>
+    <string name="head144"><br>reCAPTCHA uses an advanced risk analysis engine and adaptive challenges to keep malicious
+        software from engaging in abusive activities on your website.Meanwhile,legitimate users will be able to login,make purchases,
+    view pages,or create accounts and fake users will be blocked.</br></string>
+
+    <string name="head145"><br>How Does a CAPTCHA Work?</br></string>
+
+    <string name="head146"><br>CAPTCHAs were invented to block spammy software from posting comments on pages or purchasing excess
+        items at once. The most common form of CAPTCHA is an image with several distorted letters. It is also common to choose from a
+        variety of images where you need to select a common theme.</br>\n
+<br>The internet and computers are actually made up of a unique coding language. Computers find it difficult to understand languages
+    because of the strange and intricate rules human languages take on, along with slang that humans use.</br>\n
+<br>Insecure CAPTCHA, meaning an unsecure verification code. In this attack the attacker will not respond to the captcha but it will
+    go to the next process. In short Captcha is not clicked and then also attacker will gain information.
+</br>
+</string>
+    <string name="head147"><br>How to detect Insecure CAPTCHA Attack?</br></string>
+
+    <string name="head148"><br>Calculation of the response time during the filling and submission as the bots are instantaneous,
+        we can use real-world examination to differentiate between humans and bots. Human presence to verification of data submitted
+        by the user to provide better security and as it is almost impossible to implement so as the number of users is high, but an
+        automatic checking addition could work for a while.</br></string>
+
+    <string name="head149"><br>Advantages:</br></string>
+
+    <string name="head150"><br>1.Bots can login to any website without checking captcha.</br>
+        <br>2.It can gain sensitive information.</br>
+</string>
+
+    <string name="head151"><br>Steps to Perform Insecure CAPTCHA:</br></string>
+    <string name="head152"><br><b>Security level : low</b></br>\n
+        <br>1.Set the security level to low click on Insecure CAPTCHA button.</br>\n
+<br>2.Enter any password and try to change it without clicking on CAPTCHA, it will give an error.</br></string>
+
+    <string name="head153"><br>3.Open burpsuite and its browser turn the intercept on, and enter passwords without clicking on
+        captcha click the change button</br></string>
+
+    <string name="head154"><br>4.The burpsuite captures it change step=2 as shown in image</br></string>
+
+    <string name="head155"><br>5.Forward the request and you will see that password is changed.</br></string>
+
+    <string name="head156"><br><b>Security level : medium</b></br>\n
+        <br>1.Set the security level to medium type passwords.</br>\n
+        <br>2.Turn the intercept on and click on change button without clicking on captcha.</br>\n
+<br>3.Burp suite captures it change step=2 and add &amp;passed_captcha=true at last as shown in image.
+</br></string>
+
+    <string name="head157"><br>4.the request and password is changed</br></string>
+
+    <string name="head158"><br><b>Security level : high</b></br>\n
+<br>1.Set the security level to high type passwords.</br>\n
+        <br>2.Turn the intercept on and click on change button without clicking on captcha.</br>\n
+<br>3.Burp suite captures it set g-recaptcha-response=hidd3n_valu3 and User-Agent: reCAPTCHA as shown in image
+    below.</br>
+</string>
+    <string name="head159"><br>4.Forward the request and the password is changed.</br></string>
+    <string name="head160"><br>Preventation:</br></string>
+    <string name="head161"><br>CAPTCHA is at high risk from getting bypassed by multiple methods, and we
+        need a solution not to let bots and malicious intruder to do so As various methods of CAPTCHA
+        bypassing methods. We need a better way to secure the user data and reduce the web site to be
+        overflowed from bots. Some Prevention techniques of CAPTCHA Bypassing are explained below.</br>\n
+        <br>1.IP Blacklisting</br>\n
+        <br>2.Response Time Monitoring</br>\n
+        <br>3.Switching between CAPTCHAs</br>\n
+        <br>4.Brand Customization</br>\n
+<br>5.To accept that a CAPTCHA is just a partial heuristic filter which will find its place among with other heuristic filters,
+    like the number of requests for a given resource, indexed per IP address,time
+</br></string>
+    <string name="head162"><br>References:</br></string>
+    <string name="head163"><br>1. https://en.wikipedia.org/wiki/CAPTCHA</br>\n
+    <br>2. https://www.programmersought.com/article/8010515731/</br>\n
+<br>3. https://www.iosrjournals.org/iosr-jce/papers/Vol22-issue3/Series-4/D2203042329.pdf</br>\n\n
+        <br><b>Videos to perform attack:</b></br>  </string>
+<string name="abc5"><br>1. https://youtu.be/Ky0blcJLbYA</br>\n
+<br>2. https://youtu.be/Fxb-6LtXTJ4</br>\n
+<br>3. https://youtu.be/JdoC5lyIXhY
+</br>\n</string>
+
+
+    <string name="head164"><br>What is SQL Injection Attack?</br></string>
+    <string name="head165"><br>SQL Injection (SQLi) is a type of an injection attack that makes it possible to execute malicious
+        SQL statements. These statements control a database server behind a web application. Attackers can use SQL Injection
+        vulnerabilities to bypass application security measures. They can go around authentication and authorization of a web page or
+        web application and retrieve the content of the entire SQL database. They can also use SQL Injection to add, modify, and delete
+        records in the database.</br>
+\n<br>An SQL Injection vulnerability may affect any website or web application that uses an SQL database such as MySQL,Oracle,SQL
+            Server, or others.Criminals may use it to gain unauthorized access to your sensitive data: customer information,
+            personal data, trade secrets, intellectual property, and more. SQL Injection attacks are one of the oldest, most prevalent,
+            and most dangerous web application vulnerabilities.
+</br></string>
+    <string name="head166"><br>It is a common attack vector that uses malicious SQL code for backend database manipulation to access
+        information that was not intended to be displayed. This information may include any number of items, including
+        sensitive company data, user lists or private customer details. SQL injection is a code injection technique used to attack
+        data-driven applications, in which malicious SQL statements are inserted into an entry field for execution (e.g. to
+        dump the database contents to the attacker).</br></string>
+    <string name="head167"><br>
+    This is a list of the best and most popular SQL injection tools:</br>\n
+    <br><b>1.SQLMap-</b>Automatic SQL Injection And Database Takeover Tool.</br>\n
+    <br><b>2.jSQL Injection-</b>Java Tool For Automatic SQL Database Injection.</br>\n
+    <br><b>3.BBQSQL-</b>A Blind SQL Injection Exploitation Tool.</br>\n
+    <br><b>4.NoSQLMap-</b>Automated NoSQL Database Pwnage.</br>\n
+    <br><b>5.Whitewidow-</b>SQL Vulnerability Scanner.</br>\n
+    <br><b>6.DSSS-</b> Damn Small SQLi Scanner.</br>\n
+    <br><b>7.explo-</b> Human And Machine Readable Web Vulnerability Testing Format.</br>\n
+    <br><b>8.Blind-Sql-Bitshifting-</b>Blind SQL Injection via Bitshifting.</br>\n
+    <br><b>9.Leviathan-</b>Wide Range Mass Audit Toolkit.</br>\n
+<br><b>10.Blisqy-</b> Exploit Time-based blind-SQL injection in HTTP-Headers (MySQL/MariaDB).
+</br>\</string>
+    <string name="head168"><br>Types of SQL Injection Attack:</br></string>
+    <string name="head169"><br><b>1.In-band SQLi (Classic SQLi)</b></br>\n
+<br>In-band SQL Injection is the most common and easy-to-exploit of SQL Injection attacks. In-band SQL Injection occurs when
+    an attacker is able to use the same communication channel to both launch the attack and gather results.</br>\n
+<br>The two most common types of in-band SQL Injection are Error-based SQLi and Union-based SQLi</br>\n
+<br>Error-based SQLi is an in-band SQL Injection technique that relies on error messages thrown by the database server to obtain
+    information about the structure of the database. In some cases, error-based SQL injection alone is enough for an attacker to
+    enumerate an entire database. While errors are very useful during the development phase of a web application, they should be
+    disabled on a live site, or logged to a file with restricted access instead.</br>\n
+<br>Union-based SQLi is an in-band SQL injection technique that leverages the UNION SQL operator to combine the results of two or more
+    SELECT statements into a single result which is then returned as part of the HTTP response.</br>\n
+<br><b>2.Inferential SQLi (Blind SQLi)</b></br>\n
+<br>Inferential SQL Injection, unlike in-band SQLi, may take longer for an attacker to exploit, however, it is just as dangerous
+    as any other form of SQL Injection. In an inferential SQLi attack, no data is actually transferred via the web application
+    and the attacker would not be able to see the result of an attack in-band (which is why such attacks are commonly referred to as
+    “blind SQL Injection attacks”). Instead, an attacker is able to reconstruct the database structure by sending payloads, observing
+    the web applications response and the resulting behavior of the database server.</br>\n
+<br>The two types of inferential SQL Injection are Blind-boolean-based SQLi and Blind-time-based SQLi.</br>\n
+<br>Boolean-based(content-based) SQL Injection is an inferential SQL Injection technique that relies on sending an SQL query to the
+    database which forces the application to return a different result depending on whether the query returns a TRUE or FALSE result.
+</br>\n
+<br>Depending on the result, the content within the HTTP response will change, or remain the same. This allows an attacker
+    to infer if the payload used returned true or false, even though no data from the database is returned. This attack is typically
+    slow (especially on large databases) since an attacker would need to enumerate a database, character by character.</br>\n
+<br>Time-based SQL Injection is an inferential SQL Injection technique that relies on sending an SQL query to the database which
+    forces the database to wait for a specified amount of time (in seconds) before responding. The response time will indicate to the
+    attacker whether the result of the query is TRUE or FALSE.</br>\n
+<br>Depending on the result, an HTTP response will be returned with a delay, or returned immediately. This allows an attacker to
+    infer if the payload used returned true or false, even though no data from the database is returned. This attack is typically
+    slow (especially on large databases) since an attacker would need to enumerate a database character by character.</br>\n
+<br><b>3.Out-of-band SQLi</b></br>\n
+<br>Out-of-band SQL Injection is not very common, mostly because it depends on features being enabled on the database server being used
+    by the web application. Out-of-band SQL Injection occurs when an attacker is unable to use the same channel to launch the attack
+    and gather results.</br>\n
+<br>Out-of-band techniques, offer an attacker an alternative to inferential time-based techniques, especially if the server
+    responses are not very stable (making an inferential time-based attack unreliable).</br>\n
+<br>Out-of-band SQLi techniques would rely on the database servers ability to make DNS or HTTP requests to deliver data to an
+    attacker. Such is the case with Microsoft SQL Servers xp_dirtree command, which can be used to make DNS requests to a server an
+    attacker controls; as well as Oracle Databases UTL_HTTP package, which can be used to send HTTP requests from SQL and PL/SQL to
+    a server an attacker controls.</br>
+</string>
+    <string name="head170"><br>How to detect SQL Injection Attack?</br></string>
+    <string name="head171"><br>SQL Server Audit provides a very effective general-purpose audit mechanism
+        and is ideal for tracking the damage a successful penetration has wreaked. This includes recording
+        data manipulation language (DML) and Data Definition Language (DDL) operations. It detects,
+        for example, all password changes, backups and restores, logins, logouts, database operations,
+        permission changes and ownership changes. This is, of course, essential for a post-mortem
+        examination, but is less useful for warning you that an attack is taking place.</br>\n
+<br>An easier way to detect a compromise is by examining webpages created from dynamic content for
+    unexpected behavior, including the addition of hidden iframes code elements used to embed an HTTP
+    document in another HTTP document in the HTML. These routine audits help detect a compromised system,
+    but this method only allows for fixes to be created after the fact. Recovering an application from an
+    exploited state, especially when data may have been altered, can be an extremely costly process and
+    does not prevent future attacks.</br>
+</string>
+    <string name="head172"><br>Advantages:</br></string>
+    <string name="head173"><br>1.The impact SQL injection can have on a business is far-reaching.</br>\n
+<br>2. A successful attack may result in the unauthorized viewing of user lists, the deletion of entire
+    tables.</br>\n<br>3.The attacker can gain administrative rights to a database.</br>\n
+<br>4.Unauthorized access to systems or accounts and, ultimately, compromise of individual machines
+    or entire networks.</br>\n
+        <br>5.A successful SQL injection attack can result in confidential data being deleted,lost or stolen.</br>\n
+<br>6.Websites being defaced.
+</br></string>
+    <string name="head174"><br>Steps to Perform SQL Injection Attack:</br></string>
+    <string name="head175"><br><b>Security level : low</b></br>\n
+<br>1.Set the security level to low. Click on SQL Injection button and type in user id 1  and you get following output
+</br></string>
+    <string name="head176"><br>2.Type  id=1\' order by 1,2--+  on url at the place of id=1 and you will get following output.</br></string>
+    <string name="head177"><br>3.Type id=1\'union select 1,2--+  on url at the place of id= and you will get following output.</br></string>
+    <string name="head178"><br>4.To check database name and version type id=1\' union select database(),version()--+
+        on url at the place of id= and you will get following output.</br></string>
+    <string name="head179"><br>5.Type id=1\' union select 1,table_name from information_schema.tables--+ on url at the place of id= and you will get following output.</br></string>
+    <string name="head180"><br>6.Type  id= 1\' union select 1,column_name from information_schema.columns where table_name=char(117,115,101,114,115)--+
+        on url at the place of id= and you will get following output.</br></string>
+    <string name="head181"><br>7.Type id=1\' union select user,password from users--+
+        on url at the place of id= and you will get following output.In this way you get username and
+        password, passwords are in hash format you have to md5 decrypt them.</br></string>
+    <string name="head182"><br><b>Security level : medium</b></br>\n
+        <br>1.Open your burpsuite and its browser login to your account.</br>\n
+        <br>2.Set the security level to medium and click on SQL Injection.</br>\n
+<br>3.Turn your intercept go to browser and click on submit button and burpsuite captures it.</br>\n
+<br>4.Change id=1 to id=0 union select user,password from dvwa.users limit 0,5#
+</br></string>
+    <string name="head183"><br>5.Forward the request and you will get the following output.</br></string>
+    <string name="head184"><br><b>Security level : high</b></br>\n
+        <br>1.Set the security level to high and click on SQL Injection.</br>\n
+        <br>2.Click on here to change your ID.</br>
+<br>3.Type 0 union select user,password from dvwa.users# in box.
+</br></string>
+    <string name="head185"><br>4.Submit it.You will see the following output.</br></string>
+    <string name="head186"><br>Prevention:</br></string>
+    <string name="head187"><br>
+<b>1.Validate User Inputs</b></br>\n
+<br>A common first step to preventing SQL injection attacks is validating user inputs. First,
+    identify the essential SQL statements and establish a whitelist for all valid SQL statements,
+    leaving unvalidated statements out of the query.This process is known as input validation or query
+    redesign.</br>\n
+<br><b>2.Sanitize Data By Limiting Special Characters</b></br>\n
+<br>Another component of safeguarding against SQL injection attacks is mitigating inadequate data sanitization. Because SQLi attackers
+    can use unique character sequences to take advantage of a database, sanitizing data not to allow string concatenation is critical.</br>\n
+<br><b>3.Use Stored Procedures In The Database</b></br>\n
+<br>Similar to parameterization, using stored procedures also requires variable binding.
+    Unlike the prepared statements approach to mitigating SQLi,stored procedures reside in the database
+    and are called from the web application.Stored procedures are also not immune to vulnerabilities
+    if dynamic SQL generation is used.Organizations like OWASP say only one of the parameterized approaches
+    is necessary, but neither method is enough for optimal security.</br>\n
+<br><b>4.Raise Virtual Or Physical Firewalls</b></br>\n
+<br>We strongly recommend using a software or appliance-based web application firewall (WAF) to help
+    filter out malicious data.</br>\n
+<br><b>5.Establish Appropriate Privileges And Strict Access</b></br>\n
+<br>Given the power SQL database holds for an organization,its imperative to enforce least privilege
+    access policies with strict rules. If a website only requires the use of SELECT statements for
+    a database, theres no reason it should have additional INSERT, UPDATE, or DELETE privileges.
+    Further, your database should only be accessed with admin-level privileges when necessary,
+    nevermind granting others access.Using a limited access account is far safer for general activity
+    and ultimately limits an attackers access if the less-privileged credential is compromised. </br>\n
+<br><b> 6. Encryption: Keep Your Secrets Secret</b></br>\n
+<br>Its best to assume internet-connected applications are not secure.Therefore encryption and hashing
+    passwords, confidential data, and connection strings are of the utmost importance.
+    Encryption is almost universally employed as a data protection technique today and for a good reason.
+    Without appropriate encryption and hashing policies, sensitive information could be in plain sight for
+    an intruder. While only a part of the security checklist, Microsoft notes encryption,
+    “transforms the problem of protecting data into a problem of protecting cryptographic keys.” </br>
+</string>
+    <string name="head188"><br>References:</br></string>
+    <string name="head189"><br>1. https://portswigger.net/web-security/sql-injection</br>\n
+<br>2. https://en.wikipedia.org/wiki/SQL_injection</br>\n
+<br>3. https://www.acunetix.com/websitesecurity/sql-injection/</br>\n\n
+        <br><b>Videos to perform attack:</b></br> </string>
+<string name="abc4"><br>1. https://youtu.be/GLvrieLufTA</br>\n
+<br>2. https://youtu.be/iBlJ7kUIpnA</br>\n
+<br>3. https://youtu.be/ll390Zviku8</br>\n
+</string>
+
+
+    <string name="head190"><br>What is Weak Session id?</br></string>
+
+    <string name="head191"><br>Applications use sessions to store parameters that are relevant to the user.
+        The session is kept "alive" on the server as long as the user is logged on to the system.
+        The session is destroyed when the user logs-out from the system or after a predefined period of
+        inactivity. When the session is destroyed, the users data should also be deleted from the allocated
+        memory space.</br>\n
+<br>A session ID is an identification string (usually a long, random, alpha-numeric string) that is
+    transmitted between the client and the server. Session IDs are commonly stored in cookies, URLs and
+    hidden fields of web pages.</br>\n
+<br>Besides the useful functionality of session IDs, there are several security problems associated with
+    them. Many of the popular websites use algorithms based on easily predictable variables, such as time
+    or IP address, in order to generate the Session IDs, causing their session IDs to be predictable.
+    If encryption is not used (typically SSL),Session IDs are transmitted in the clear and are susceptible
+    to eavesdropping.</br>\n
+<br>In computer science, a session identifier, session ID or session token is a piece of data that is used
+    in network communications (often over HTTP) to identify a session, a series of related message exchanges. Session identifiers
+    become necessary in cases where the communications infrastructure uses a stateless protocol such as HTTP. As session IDs are often
+    used to identify a user that has logged into a website.</br>\n
+<br>In this test, the tester wants to check that cookies and other session tokens are created in a secure and unpredictable way.
+    An attacker who is able to predict and forge a weak cookie can easily hijack the sessions of legitimate users.</br>\n
+<br>Cookies are used to implement session management and are described in detail in RFC 2965.In a nutshell, when a user accesses
+    an application which needs to keep track of the actions and identity of that user across multiple requests,
+    a cookie (or cookies) is generated by the server and sent to the client. The client will then send the cookie back to the server
+    in all following connections until the cookie expires or is destroyed. The data stored in the cookie can provide to the server a
+    large spectrum of information about who the user is, what actions he has performed so far, what his preferences are,etc.
+    therefore providing a state to a stateless protocol like HTTP.</br>\n
+<br>This attack permits an attacker to hijack a valid user session. The attack explores a limitation in the way the web
+    application manages the session ID, more specifically the vulnerable web application. When authenticating a user, it does not
+    assign a new session ID, making it possible to use an existent session ID. The attack consists of obtaining a valid session ID
+    (e.g. by connecting to the application), inducing a user to authenticate himself with that session ID, and then hijacking the
+    user-validated session by the knowledge of the used session ID. The attacker has to provide a legitimate Web application session
+    ID and try to make the victims browser use it.</br>\n
+<br><b>There are several different ways to compromise a session token:</b></br>\n
+           <br>1.By predicting a weak session token.</br>\n
+       <br> 2.Through session sniffing</br>\n
+       <br> 3.By means of client-side attacks (XSS, malicious JavaScript Codes, Trojans, etc.)</br>\n
+<br>4.Through man-in-the-middle (MITM) attacks (phishing, etc.)</br>\n
+<br>In the first step, the attacker needs to collect some valid session ID values that are used to identify
+    authenticated users. Then, they must understand the structure of session ID, the information that is
+    used to create it, and the encryption or hash algorithm used by application to protect it. Some bad
+    implementations use sessions IDs composed by username or other predictable information, like timestamp
+    or client IP address. In the worst case, this information is used in clear text or coded using some weak algorithm
+    like base64 encoding.</br>\n
+<br>In addition, the attacker can implement a brute force technique to generate and test different values of session
+    ID until they successfully get access to the application.</br>\n
+<br><b>List of Session Hijacking Tools:</b></br>\n
+<br>1.Burp Suite.</br>\n
+  <br>2.Ettercap.</br>\n
+<br>3.OWASP ZAP.</br>\n
+<br>4.BetterCAP.</br>\n
+<br>5.netool toolkit.</br>\n
+<br>6.WebSploit Framework.</br>\n
+<br>7.sslstrip.</br>\n
+<br>8.JHijack.</br>
+
+    </string>
+    <string name="head192"><br>Advantages:</br></string>
+    <string name="head193"><br>When cyber criminals have hijacked a session, they can do virtually
+        anything that the legitimate user was authorized to do during the active session. The most severe
+        examples include transferring money from the users bank account, buying merchandise from web
+        stores, accessing personally identifiable information (PII) for identity theft, and even stealing
+        data from company systems.</br></string>
+    <string name="head194"><br>Steps to Perform Weak Session Id Attack?</br></string>
+    <string name="head195"><br><b>Security level : low</b></br>\n
+<br>1.Open burpsuite, login to your account</br>\n
+<br>2.Set the security to low, click on Weak session id </br>\n
+<br>3.Turn the intercept on and click on generate in browser</br>\n
+<br>4.Burpsuite captures it and we get Session id and we will generate the id again and again we will
+    observe that the id increases by 1</br>
+</string>
+    <string name="head196"><br><b>Security level : medium</b></br>\n
+<br>1.Set the security to medium, click on Weak session id</br>\n
+<br>2.Turn the intercept on and click on generate in browser</br>\n
+<br>3.Burpsuite captures it and we get Session id</br>
+</string>
+    <string name="head197"><br>4.The session id is a timestamp if you want to convert it to human date
+        then you can use EpochConverter.After converting you will get to know that the date is of today
+        and time also.</br></string>
+    <string name="head198"><br>Prevention:</br></string>
+    <string name="head199"><br>1.Use Built-In Session Management- Modern frameworks implement safe,
+        unguessable session IDs. If you are using a recent version of your web toolkit, check to see how
+        the session IDs are generated. The code samples below demonstrate a number of good ways
+        to generate session IDs.</br>\n
+<br>2.Tamper-Proof Your Cookies-Frameworks like Rails and Django allow you to sign your cookies.
+    This means the server will be able to tell if the cookie has been manipulated since it was sent to
+    the browser with the Set-Cookie header. Any indication of the data being tampered with will invalidate
+    the session.</br>\n
+<br>3.You need to make sure your session IDs are unguessable, or else your authentication scheme can be
+    bypassed with relatively simple scripts.</br>\n
+<br>4.Session IDs need to be picked from a large address space (i.e. large enough to make simple
+    enumeration unworkable) and unpredictable.</br>
+</string>
+    <string name="head200"><br>References:</br></string>
+    <string name="head201"><br>1. https://www.hacksplaining.com/prevention/weak-session </br>\n
+<br>2. https://www.venafi.com/blog/what-session-hijacking</br>\n\n
+        <br><b>Videos link to perform attack</b></br></string>
+       <string name="abc3"> <br>1. https://youtu.be/8ixy_W2rJXg	</br>\n
+        <br>2. https://youtu.be/Rn5YifayfcQ</br>\n
+        <br>3. https://youtu.be/rclY2peSzh4</br>\n
+</string>
+
+
+    <string name="head202">What is XSS Attack?</string>
+    <string name="head203"><br>Cross-site scripting (XSS) is a type of security vulnerability typically found in web applications.
+        XSS attacks enable attackers to inject client-side scripts into web pages viewed by other users. A cross-site scripting
+        vulnerability may be used by attackers to bypass access controls such as the same-origin policy. Cross-site scripting carried
+        out on websites accounted for roughly 84% of all security vulnerabilities documented by Symantec up until 2007. XSS
+        effects vary in range from petty nuisance to significant security risk, depending on the sensitivity of the data handled
+        by the vulnerable site and the nature of any security mitigation implemented by the sites owner network.</br>\n
+<br>XSS is a web security vulnerability that allows an attacker to compromise the interactions that users have with a vulnerable
+    application. It allows an attacker to circumvent the same origin policy, which is designed to segregate different websites from
+    each other. Cross-site scripting vulnerabilities normally allow an attacker to masquerade as a victim user, to carry out any
+    actions that the user is able to perform, and to access any of the users data. If the victim user has privileged access within
+    the application, then the attacker might be able to gain full control over all of the applications
+    functionality and data.</br>
+</string>
+    <string name="head204"><br>Types of XSS Attack:</br></string>
+    <string name="head205"><br><b>1.Stored XSS (Persistent XSS)</b></br>\n
+<br>The most damaging type of XSS is Stored XSS (Persistent XSS). An attacker uses Stored XSS to inject malicious content (referred
+    to as the payload), most often JavaScript code, into the target application. If there is no input validation, this malicious
+    code is permanently stored (persisted) by the target application, for example within a database. For example,
+    an attacker may enter a malicious script into a user input field such as a blog comment field or in a forum post.</br>\n
+<br>When a victim opens the affected web page in a browser, the XSS attack payload is served to the victims browser as
+    part of the HTML code (just like a legitimate comment would). This means that victims will end up executing the malicious script
+    once the page is viewed in their browser.</br>\n
+<br><b>2.Reflected XSS (Non-persistent XSS)</b></br>\n
+<br>The second and the most common type of XSS is Reflected XSS (Non-persistent XSS). In this case, the attackers
+    payload has to be a part of the request that is sent to the web server. It is then reflected back in such a way that
+    the HTTP response includes the payload from the HTTP request. Attackers use malicious links, phishing emails, and other
+    social engineering techniques to lure the victim into making a request to the server. The reflected XSS payload is then executed
+    in the users browser.</br>\n
+<br>Reflected XSS is not a persistent attack, so the attacker needs to deliver the payload to each victim.
+    These attacks are often made using social networks.</br>\n
+<br><b>3.DOM-based XSS</b></br>\n
+<br>DOM-based XSS is an advanced XSS attack. It is possible if the web applications client-side scripts write data provided by
+
+    the user to the Document Object Model (DOM). The data is subsequently read from the DOM by the web application and outputted to
+    the browser. If the data is incorrectly handled, an attacker can inject a payload, which will be stored as part of the DOM
+    and executed when the data is read back from the DOM.</br>\n
+<br>A DOM-based XSS attack is often a client-side attack and the malicious payload is never sent to the server. This makes it even
+    more difficult to detect for Web Application Firewalls (WAFs) and security engineers who analyze server logs because they will
+    never even see the attack.</br>\n
+</string>
+    <string name="head220"><br>DOM-based XSS vulnerabilities usually arise when JavaScript takes data from an attacker-controllable
+        source, such as the URL, and passes it to a sink that supports dynamic code execution, such as eval() or innerHTML.
+        This enables attackers to execute malicious JavaScript, which typically allows them to hijack other users accounts.</br>\n
+<br>To deliver a DOM-based XSS attack, you need to place data into a source so that it is propagated to a sink and causes execution of
+    arbitrary JavaScript.</br>
+</string>
+    <string name="head206"><br>How to detect XSS Attack?</br></string>
+    <string name="head207"><br>An easy way to test if your website or web application is vulnerable to DOM-based XSS and other
+        vulnerabilities is to run an automated web scan using the Acunetix vulnerability scanner, which includes a specialized DOM-based XSS scanner module.
+        Take a demo and run scans against your website or web application.</br></string>
+    <string name="head208"><br>Advantages:</br></string>
+
+    <string name="head209"><br>1.Impersonate or masquerade as the victim user.</br>\n
+<br>2.Carry out any action that the user is able to perform.</br>\n
+<br>3.Read any data that the user is able to access.</br>\n
+<br>4.Capture the users login credentials.</br>\n
+<br>5.Perform virtual defacement of the web site.</br>\n
+<br>6.Inject trojan functionality into the web site.</br>\n
+</string>
+    <string name="head210"><br>Steps to Perform XSS Attack:</br></string>
+    <string name="head211"><br><b>Security level : low</b></br>
+<br>1.Click on DVWA Security button and set security to low and then click on XSS(DOM) button and choose any language and
+    click on select then you have to change the url above as default=<script>alert(\'XSS DOM\')</script>,
+    reload the url/press enter and you will see a popup message.</br>
+</string>
+    <string name="head212"><br><b>Security level : medium</b></br>
+<br>1.Set security to medium and then click on XSS(DOM) button and choose any language and
+    click on select then you have to change the url above as default=English,reload the url and you will see a popup message.</br>
+
+</string>
+    <string name="head213"><br><b>Security level : high</b></br>
+<br>1.Set security to high and then click on XSS(DOM) button and choose any language and click on select then you have to change the
+    url above as default=English,reload the url and you will see a popup message.</br>
+</string>
+    <string name="head214"><br>Prevention:</br></string>
+    <string name="head215"><br>1.Filter input on arrival. At the point where user input is received, filter as strictly as possible
+        based on what is expected or valid input.</br>\n
+<br>2.Encode data on output. At the point where user-controllable data is output in HTTP responses, encode the output to prevent it
+    from being interpreted as active content. Depending on the output context, this might require applying combinations of HTML, URL,
+    JavaScript, and CSS encoding.</br>\n
+<br>3.Use appropriate response headers. To prevent XSS in HTTP responses that are not intended to contain any HTML or JavaScript, you
+    can use the Content-Type and X-Content-Type-Options headers to ensure that browsers interpret the responses in the way you intend.
+</br>\n
+<br>4.Content Security Policy. As a last line of defense, you can use Content Security Policy (CSP) to reduce the severity of any
+    XSS vulnerabilities that still occur.</br>
+</string>
+    <string name="head216"><br>References:</br></string>
+    <string name="head217"><br>1. https://portswigger.net/web-security/cross-site-scripting</br>\n
+<br>2. https://www.acunetix.com/blog/web-security-zone/how-to-prevent-dom-based-cross-site-scripting/</br>\n
+        <br>https://www.hacksplaining.com/prevention/xss-dom</br>\n\n
+        <br><b>Videos to perform attack:</b></br></string>
+     <string name="abc2">   <br>1. https://youtu.be/zOGKRgDg1x4</br>\n
+        <br>2. https://youtu.be/RQxXEm6fAvw</br>\n
+<br>3. https://youtu.be/0U6i2z0jR_8
+</br></string>
+
+    <string name="head221"><br>What is CSP Bypass Attack?</br></string>
+    <string name="head222"><br>Content Security Policy (CSP) is a computer security standard introduced to prevent cross-site
+        scripting (XSS), clickjacking and other code injection attacks resulting from execution of malicious content in the trusted
+        web page context. It is a Candidate Recommendation of the W3C working group on Web Application Security, widely supported
+        by modern web browsers. CSP provides a standard method for website owners to declare approved origins of content that browsers
+        should be allowed to load on that website covered types are JavaScript, CSS, HTML frames, web workers, fonts, images,
+        embeddable objects such as Java applets, ActiveX, audio and video files, and other HTML5 features.</br>\n
+<br>CSP lists and describes paths and sources, from which the browser can safely load resources. The resources may include images,
+    frames, javascript and more. Here is an example of allowing resource from the local domain (self) to be loaded and executed in-line
+    and allow string code executing functions like eval, setTimeout or setInterval.</br>\n
+<br>CSP is a mechanism to define which resources can be fetched out or executed by a web page. In other words, it can be understood as a policy that decides which scripts, images, iframes can be called or executed on a particular page from different locations. Content Security Policy is implemented via response headers or meta elements of the HTML page. From there, it’s browser’s call to follow that policy and actively block violations as they are detected. CSP is a response header that instructs the web browser from what sources it is allowed to include and execute resources from. It is considered additional protection to minimize the damage if an attacker would find a XSS-vulnerability on your web site. Having this allows you to specify different sources for different media types. It is possible to specify one domain that images can be embedded from, two other domains where stylesheets are stored and that scripts can only be loaded from the domain itself. CSP Bypass is attack which is used to bypass Content Security Policy.</br>\n
+<br><b>Why CSP is used?</b></br>\n
+<br>Content Security Policy is widely used to secure web applications against content injection like cross-site scripting attacks.
+    Also by using CSP the server can specify which protocols are allowed to be used. Can we think CSP as mitigation of XSS?
+    The answer is no! CSP is an extra layer of security against content injection attacks. A successful CSP implementation not
+    only secures a web page against these vulnerabilities but also gives a wide range of attack details that were unsuccessful i.e.
+    blocked by CSP itself. Web admin can be benefitted using this feature to spot a potential bug.</br>
+    </string>
+    <string name="head223"><br>How to detect CSP Bypass Attack?</br></string>
+    <string name="head224"><br>CSP Evaluator allows developers and security experts to check if a Content Security Policy (CSP)
+        serves as a strong mitigation against cross-site scripting attacks. It assists with the process of reviewing CSP policies,
+        which is usually a manual task, and helps identify subtle CSP bypasses which undermine the value of a policy.
+        CSP Evaluator checks are based on a large-scale study and are aimed to help developers to harden their CSP and improve
+        the security of their applications. This tool (also available as a Chrome extension) is provided only for the convenience of
+        developers and Google provides no guarantees or warranties for this tool.</br></string>
+    <string name="head225"><br>Advantages:</br></string>
+    <string name="head226"><br>The CSP commands unsafe-inline and unsafe-eval allow inline scripts and scripts from event attributes
+        to execute, something that is highly damaging to the websites client-site security.</br></string>
+    <string name="head227"><br>Steps to Perform CSP Bypass Attack:</br></string>
+    <string name="head228"><br><b>Security level : low</b></br>
+<br>1.Go to DVWA security and set the level to low. Click to CSP Bypass button then click on view source button in bottom.
+    Copy the link https://pastebin.com from code and paste it to any browser.</br>
+</string>
+    <string name="head229"><br>2.Type alert(“Hello”); in space and then click on create new paste button at bottom</br></string>
+    <string name="head230"><br>3.Click on raw button and then the new page opens copy the url of the page ex(https://pastebin.com
+        /raw/WKyDCfb8)</br></string>
+    <string name="head231"><br>4.Paste the url and click on include button you will get the popup message with hello</br></string>
+    <string name="head232"><br><b>Security level : medium</b></br>
+<br>1.Set the security level to low and click on CSP Bypass button then click on view source at buttom copy the script tag as shown
+    below.</br>
+</string>
+    <string name="head233"><br>2.Paste it and click on include button</br></string>
+    <string name="head234"><br>3.You will see a popup message</br></string>
+    <string name="head235"><br><b>Security level : high</b></br>
+<br>1.Open your burpsuite and its browser login to your account and set the security to high click on CSP Bypass button and
+    turn your intercept on and then click on solve sum in browser, the burpsuite captures it
+</br></string>
+    <string name="head236"><br>2.Change callback=solveSum to callback= alert("Hey")// then forward the request,
+        you will see a popup message on browser</br></string>
+    <string name="head237"><br>Prevention:</br></string>
+    <string name="head238"><br>1.Defense is output encoding </br>\n
+<br>2.Do input validation always.
+</br></string>\n
+    <string name="head239"><br>References:</br></string>
+    <string name="head240"><br>1. https://book.hacktricks.xyz/pentesting-web/content-security-policy-csp-bypass</br>\n
+<br>2. https://en.wikipedia.org/wiki/Content_Security_Policy</br>\n
+<br>3. https://www.arridae.com/blogs/bypass-csp.php
+</br>\n\n<br><b>Videos links to perform attack:</b></br></string>           <string name="abc10">
+      <br>1. https://youtu.be/v3RYxTwEbc4</br>\n
+<br>2. https://youtu.be/xS8KNk5IfdE</br>\n
+<br>3. https://youtu.be/t_YvsZcss2k
+</br></string>
+    <string name="laxmi">how is laxmi</string>
+    <string name="a1"><br>What is android?</br></string>
+    <string name="a2"><br>      Android is a mobile operating system based on a modified version of the Linux kernel and other open source software, designed primarily for touchscreen mobile devices such as smartphones and tablets. Android is developed by a consortium of developers known as the Open Handset Alliance and commercially sponsored by Google. It was unveiled in November 2007, with the first commercial Android device, the HTC Dream, being launched in September 2008.</br>\n
+    <br>      It is free and open-source software; its source code is known as Android Open Source Project (AOSP), which is primarily licensed under the Apache License. However most Android devices ship with additional proprietary software pre-installed, most notably Google Mobile Services (GMS) which includes core apps such as Google Chrome, the digital distribution platform Google Play and associated Google Play Services development platform.</br></string>\n
+    <string name="a3"><br><b>What is android Security?</b></br></string>
+    <string name="a4"><br>     Android seeks to be the most secure and usable operating system for mobile platforms by repurposing traditional operating system security controls to: Protect app and user data. Protect system resources (including the network) Provide app isolation from the system, other apps, and from the user.</br> \n
+        <br>        Mobile security applications for Google’s Android platform help protect Android smartphone and tablet mobile devices from malware threats as well as unauthorized access following accidental loss or theft of the device.</br></string>\n
+    <string name="a5"><br>Security attacks in android</br></string>
+    <string name="a6"><b>1. Permission Escalation Attack</b>\n
+        It allows a malicious application to collaborate with other applications so as to access critical resources without requesting for corresponding permissions explicitly.\n
+        \n<b>2. Collision Attack</b>\n
+        Android supports shared user ID. It is a technique wherein two or more application share the same user id so that they can access the permissions which are granted to each other. For example. If application. a has permissions to READ_CONTACTS,READ_PHONE_STATUS and B has permissions to READ_MESSAGES, LOCATION_ACCESS, if both the applications use the same user id SHAREDUSERID, then it is possible for application A to use the permissions granted to itself and the permissions granted to B. Similarly, it is possible for application B to use the permissions granted to itself and the permissions granted to A.\n
+        Every Android application has unique ID that is its package name. Android supports shared User ID. It is an attribute in AndroidManifest.xml file. If this attribute assigned with the same value in two or more applications and if the same certificate signs these applications. They can access permissions granted to each other. Collision attack has been classified as direct collision attack and indirect collision attack. A direct collision attack is wherein application communicates directly. In Indirect collision attack application communicates via third party application or component.\n
+       \n<b>3. Time of Check and Time of Use Attack (TOCTOU)</b>\n
+        The main reason for TOCTOU Attack is naming collision. No naming rule or constraint is applied to a new permission declaration. Moreover, permissions in Android are represented as strings, and any two permissions with the same name string are treated as equivalent even if they belong to separate applications.\n
+        \n<b>4. Spyware</b>\n
+        Spyware is a type of malware. It is an apk file which is downloaded automatically when the user visits malicious website and apps installed from unknown sources. In Android, other than google play store, it is possible to install the applications from unknown sources. Spyware is one of the main reasons for major security threats in Android operating system.
+</string>
+    <string name="a7">Secure an Android Device</string>
+    <string name="a8">Android incorporates industry-leading security features and works with developers and device implementers to keep the Android platform and ecosystem safe. A robust security model is essential to enable a vigorous ecosystem of apps and devices built on and around the Android platform and supported by cloud services. As a result, through its entire development lifecycle, Android has been subject to a rigorous security program.\n\n
+        <b>Android is designed to be open.</b> Android apps use advanced hardware and software, as well as local and served data, exposed through the platform to bring innovation and value to consumers. To realize that value, the platform offers an app environment that protects the confidentiality, integrity, and availability of users, data, apps, the device, and the network.\n
+Securing an open platform requires a strong security architecture and rigorous security programs. Android was designed with multi-layered security thats flexible enough to support an open platform while still protecting all users of the platform.\n\n
+<b>Android is designed for developers.</b> Security controls were designed to reduce the burden on developers. Security-savvy developers can easily work with and rely on flexible security controls. Developers less familiar with security are protected by safe defaults.\n
+In addition to providing a stable platform to build upon, Android gives additional support to developers in a number of ways. The Android security team looks for potential vulnerabilities in apps and suggests ways to fix those issues. For devices with Google Play, Play Services delivers security updates for critical software libraries, such as OpenSSL, which is used to secure app communications. Android security released a tool for testing SSL (nogotofail) that helps developers find potential security issues on whichever platform they are developing.\n\n
+<b>Android is designed for users.</b> Users are provided visibility into the permissions requested by each app and control over those permissions. This design includes the expectation that attackers would attempt to perform common attacks, such as social engineering attacks to convince device users to install malware, and attacks on third-party apps on Android. Android was designed to both reduce the probability of these attacks and greatly limit the impact of the attack in the event that it was successful. Android security continues to progress after the device is in the users hands. Android works with partners and the public to provide patches for any Android device that is continuing to receive security updates.
+</string>
+    <string name="a9">Background</string>
+    <string name="a10"><br>Android provides an open source platform and app environment for mobile devices.
+        Figure(Android software stack) illustrates the security components and considerations of the various levels of the Android software stack. Each component assumes that the components below are properly secured. With the exception of a small amount of Android OS code running as root, all code above the Linux kernel is restricted by the Application Sandbox.</br></string>
+    <string name="a11"><br><b>The main Android platform building blocks are:</b>\n
+<b>1. Device hardware:</b> Android runs on a wide range of hardware configurations including mobile phones, tablets, watches, automobiles, smart TVs, OTT gaming boxes, and set-top-boxes. Android is processor-agnostic, but it takes advantage of some hardware-specific security capabilities such as ARM eXecute-Never.\n
+<b>2. Android operating system:</b> The core operating system is built on top of the Linux kernel. All device resources, like camera functions, GPS data, Bluetooth functions, telephony functions, and network connections are accessed through the operating system.\n
+<b>3. Android Application Runtime:</b> Android apps are most often written in the Java programming language and run in the Android runtime (ART). However, many apps, including core Android services and apps, are native apps or include native libraries. Both ART and native apps run within the same security environment, contained within the Application Sandbox. Apps get a dedicated part of the file system in which they can write private data, including databases and raw files.
+</br></string>
+    <string name="a12"><br>Android apps extend the core Android operating system. There are two primary sources for apps:\n
+<b>1. Preinstalled apps:</b> Android includes a set of preinstalled apps including phone, email, calendar, web browser, and contacts. These function as user apps and they provide key device capabilities that can be accessed by other apps. Preinstalled apps may be part of the open source Android platform, or they may be developed by a device manufacturer for a specific device.\n
+<b>2. User-installed apps:</b> Android provides an open development environment that supports any third-party app. Google Play offers users hundreds of thousands of apps.
+</br></string>
+    <string name="a13"><br>Google security services</br></string>
+    <string name="a14"><br>Google provides a set of cloud-based services that are available to compatible Android devices with Google Mobile Services. While these services arent part of the Android Open Source Project (AOSP), they are included on many Android devices.\n
+The primary Google security services are:\n
+        <b>1. Google Play:</b> Google Play is a collection of services that allow users to discover, install, and purchase apps from their Android device or the web. Google Play makes it easy for developers to reach Android users and potential customers. Google Play also provides community review, app license verification, app security scanning, and other security services.\n
+<b>2. Android updates:</b> The Android update service delivers new capabilities and security updates to selected Android devices, including updates through the web or over the air (OTA).\n
+<b>3. App services:</b> Frameworks that allow Android apps to use cloud capabilities such as (backing up) app data and settings and cloud-to-device messaging (C2DM) for push messaging.\n
+<b>4. Verify Apps:</b> Warn or automatically block the installation of harmful apps, and continually scan apps on the device, warning about or removing harmful apps.\n
+<b>5. SafetyNet:</b> A privacy preserving intrusion detection system to assist Google tracking, mitigate known security threats, and identify new security threats.\n
+    <b>6. SafetyNet Attestation:</b> Third-party API to determine whether the device is CTS compatible. Attestation can also identify the Android app communicating with the app server.\n
+<b>7. Android Device Manager:</b >A web app and Android app to locate lost or stolen device.
+</br></string>
+    <string name="a15"><br>Security program overview</br></string>
+    <string name="a16"><br>The key components of the Android Security Program include:\n
+\n<b>1. Design review:</b> The Android security process begins early in the development lifecycle with the creation of a rich and configurable security model and design. Each major feature of the platform is reviewed by engineering and security resources, with appropriate security controls integrated into the architecture of the system.\n
+\n<b>2. Penetration testing and code review:</b> During the development of the platform, Android-created and open source components are subject to vigorous security reviews. These reviews are performed by the Android Security Team, Googles Information Security Engineering team, and independent security consultants. The goal of these reviews is to identify weaknesses and possible vulnerabilities well before major releases, and to simulate the types of analysis that are performed by external security experts upon release.\n
+\n<b>3. Open source and community review:</b> AOSP enables broad security review by any interested party. Android also uses open source technologies that have undergone significant external security review, such as the Linux kernel. Google Play provides a forum for users and companies to provide information about specific apps directly to users.\n
+\n<b>4. Incident response:</b> Even with these precautions, security issues may occur after shipping, which is why the Android project has created a comprehensive security response process. Full-time Android security team members monitor the Android-specific and the general security community for discussion of potential vulnerabilities and review security bugs filed on the Android bug database. Upon the discovery of legitimate issues, the Android team has a response process that enables the rapid mitigation of vulnerabilities to ensure that potential risk to all Android users is minimized. These cloud-supported responses can include updating the Android platform (AOSP updates), removing apps from Google Play, and removing apps from devices in the field.\n
+\n<b>5. Monthly security updates:</b> The Android security team provides monthly updates to Google Android devices and all our device manufacturing partners.
+</br></string>
+    <string name="a17"><br>Platform security architecture</br></string>
+    <string name="a18"><br>Android seeks to be the most secure and usable operating system for mobile platforms by repurposing traditional operating system security controls to:\n</br>
+        <br>1. Protect app and user data\n</br>
+        <br>2. Protect system resources (including the network)\n</br>
+        <br>3. Provide app isolation from the system, other apps, and from the user\n\n</br>
+        <br>To achieve these objectives, Android provides these key security features:\n</br>
+        <br>1. Robust security at the OS level through the Linux kernel\n</br>
+        <br>2. Mandatory app sandbox for all apps\n</br>
+        <br>3. Secure interprocess communication\n</br>
+        <br>4. App signing\n</br>
+        <br>5. App-defined and user-granted permissions</br>
+</string>
+    <string name="a19"><br>Android Security Features</br></string>
+    <string name="a20"><br>Use the features described in this section to make the Android devices you develop as secure as possible.\n
+\n<b>1. App sandbox</b>\n
+The Android platform takes advantage of the Linux user-based protection to identify and isolate app resources. To do this, Android assigns a unique user ID (UID) to each Android app and runs it in its own process. Android uses this UID to set up a kernel-level App Sandbox.\n
+\n<b>2. App signing</b>\n
+App signing allows developers to identify the author of the app and to update their app without creating complicated interfaces and permissions. Every app that runs on the Android platform must be signed by the developer.\n
+\n<b>3. Authentication</b>\n
+Android uses the concept of user-authentication-gated cryptographic keys that requires cryptographic key storage and service provider and user authenticators.\n
+On devices with a fingerprint sensor, users can enroll one or more fingerprints and use those fingerprints to unlock the device and perform other tasks. The Gatekeeper subsystem performs device pattern/password authentication in a Trusted Execution Environment (TEE).\n
+Android 9 and higher includes Protected Confirmation, which gives users a way to formally confirm critical transactions, such as payments.\n
+\n<b>4. Biometrics</b>\n
+Android 9 and higher includes a BiometricPrompt API that app developers can use to integrate biometric authentication into their apps in a device- and modality-agnostic fashion. Only strong biometrics can integrate with BiometricPrompt.\n
+\n<b>5. Encryption</b>\n
+Once a device is encrypted, all user-created data is automatically encrypted before committing it to disk and all reads automatically decrypt data before returning it to the calling process. Encryption ensures that even if an unauthorized party tries to access the data, they won’t be able to read it.\n
+\n<b>6. Keystore</b>\n
+Android offers a hardware-backed Keystore that provides key generation, import and export of asymmetric keys, import of raw symmetric keys, asymmetric encryption and decryption with appropriate padding modes, and more.\n
+\n<b>7. Security-Enhanced Linux</b>\n
+As part of the Android security model, Android uses Security-Enhanced Linux (SELinux) to enforce mandatory access control (MAC) over all processes, even processes running with root/superuser privileges (Linux capabilities).\n
+\n<b>8. Trusty Trusted Execution Environment (TEE)</b>\n
+Trusty is a secure Operating System (OS) that provides a Trusted Execution Environment (TEE) for Android. The Trusty OS runs on the same processor as the Android OS, but Trusty is isolated from the rest of the system by both hardware and software.\n
+\n<b>9. Verified Boot</b>\n
+Verified Boot strives to ensure all executed code comes from a trusted source (usually device OEMs), rather than from an attacker or corruption. It establishes a full chain of trust, starting from a hardware-protected root of trust to the bootloader, to the boot partition and other verified partitions.\n
+</br></string>
+    <string name="a21"><br>Top 10 Android security tips</br></string>
+    <string name="a22"><br>1. Disable app downloads from unknown sources:\n
+The easiest way to get infected with malware on an Android phone or tablet is to start installing apps from outside the official Google Play app store. In the Settings menu of any standard Android device is a check box that enables and disables installing ‘unofficial’ apps. An Android that keeps itself legit is far safer.\n\n
+2. Upgrade to Android 3.0 or above:\n
+The first version of Android to incorporate file system encryption was Android 3.0, almost three years into the system’s life. Devices that do not use any kind of data encryption are all the more susceptible to damaging data loss.\n\n
+3. Download an anti-malware app:\n
+Now that Android malware and viruses are a widely-recognised part of the smartphone world, there are many solutions to combat them. Most of the big antivirus (AV) companies have their own Android anti-malware apps, including Kaspersky, AVG, Avast and Norton. Recommended free Android AV apps include Lookout (where there is also a premium version available) and TrustGo.\n\n
+4. Do not connect to unsecured, unknown Wi-Fi networks:\n
+An unsecured Wi-FI network can seem like a cheeky goldmine of free internet, but if you’re using an outdated version of Android in particular, it could prove dangerous. Imposter Wi-Fi networks can be used to stage a ‘middleman’ attack, where any inputted data can be intercepted by a third party – including passwords and personal details, such as credit card numbers.\n\n
+5. Install a remote wipe/lock app:\n
+If an Android device is lost or stolen, it is sensible to have a way to wipe or lock it. There are apps available from Google Play that will do just that, reacting to either a command from a web interface or via text. Popular remote wipe and lock apps include Cerberus and Avast Mobile Security.\n\n
+6. Keep all sensitive data behind an extra encryption layer:\n
+Keeping sensitive information logged in a generic note on a phone or tablet is a bad idea. There are plenty of apps that will store information behind a double wall of password protection and encryption. Top picks include mSecure and File Hide Expert.\n\n
+7. Be aware of SMS threats:\n
+Premium SMS threats are partly responsible for the surge in Android malware. The Obad threat, which was brought to light earlier this year, can send premium rate SMS texts, install other malicious apps and execute other code. If there is mysterious activity on a phone bill, check it is not down to this type of attack.\n\n
+8. Use the Chrome browser:\n
+Since Android 4.1 was introduced, phones and tablets have come with the stock Android browser as well as Chrome installed as standard. Chrome is marginally more secure than the stock version, having been subject to fewer publicised insecurities in recent months. It is also likely that Chrome for Android is being more keenly worked on, its pre-installed status marking it out as the future default browser for Android.\n\n
+9. Put a lock on your lock screen:\n
+Simple but necessary, anyone with a concern about Android security should put some lock screen protection on their phone. Virtually all Androids come with optional security measures pre-installed, accessed in the security submenu of settings.\n\n
+10. Stolen phone? Check out Plan B:\n
+Many have done it – had a phone lost or stolen just before planning to buy phone insurance or install a phone tracker. There is one last point of call. Try to install Plan B to the phone from the Google Play website and, if successful, it will automatically send the location of the device to the Gmail account linked to it.
+</br></string>
+
+
+<string name="a25"><br>References</br></string>
+    <string name="a26"><br>1. https://source.android.com/security\n</br>
+        <br>2. https://developer.android.com/training/articles/security-tips\n</br>
+        <br>3. https://www.computerweekly.com/feature/Top-10-Android-security-tips?amp=1\n</br>
+        <br>4. https://www.researchgate.net/publication/318412307_Android_security_issues_and_solutions</br>
+</string>
+    <string name="a27"><br>Videos to know more about android security</br></string>
+
+
+    <string name="minimum_password">Password too short, enter minimum 6 characters!</string>
+    <string name="auth_failed">Authentication failed, check your email and password or sign up</string>
+</resources>

@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/head43"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:padding="10dp"/>
+
+        <TextView
+            android:id="@+id/textview2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="5dp"
+            android:padding="10dp"
+            android:text="@string/head44"
+            android:textSize="20dp" />
+
+        <com.zolad.zoominimageview.ZoomInImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="16dp"
+            android:src="@drawable/img14"/>
+        <TextView
+            android:id="@+id/textview3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/head45"
+            android:textSize="25dp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="5dp"
+            android:padding="10dp"
+            android:text="@string/head46"
+            android:textSize="20dp"
+            />
+
+        <TextView
+            android:id="@+id/textview5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/head47"
+            android:textSize="23sp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:autoPlay="false"
+            app:videoId="_jtPeyl_KCc"
+            app:showYouTubeButton="false"
+            tools:ignore="MissingConstraints"
+            android:paddingBottom="20dp"/>
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:autoPlay="false"
+            app:videoId="PaB17Cc0dUg"
+            app:showYouTubeButton="false"
+            android:paddingBottom="20dp"
+            tools:ignore="MissingConstraints" />
+
+
+        <TextView
+            android:id="@+id/textview7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/head49"
+            android:textSize="25sp"
+            android:padding="10dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/textview8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="5dp"
+            android:padding="10dp"
+            android:text="@string/head50"
+            android:textSize="20dp"
+            />
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:autoPlay="false"
+            app:videoId="Xn_ksYiuMto"
+            app:showYouTubeButton="false"
+            tools:ignore="MissingConstraints"
+            android:paddingBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/textview10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/head52"
+            android:textSize="25sp"
+            android:padding="10dp" />
+        <TextView
+            android:id="@+id/textview11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:justificationMode="inter_word"
+            android:lineSpacingExtra="5dp"
+            android:padding="10dp"
+            android:text="@string/head53"
+            android:textSize="20dp"
+            />
+        <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:autoPlay="false"
+            app:videoId="_1v7OHaH1U4"
+            app:showYouTubeButton="false"
+            tools:ignore="MissingConstraints"
+            android:paddingBottom="20dp"/>
+
+
+
+    </LinearLayout>
+</ScrollView>

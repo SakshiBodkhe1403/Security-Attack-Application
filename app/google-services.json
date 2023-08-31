@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1051544498530",
+    "project_id": "securitya-6b1bf",
+    "storage_bucket": "securitya-6b1bf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051544498530:android:3130fcf7f1b8c33859fc3b",
+        "android_client_info": {
+          "package_name": "com.example.securityattacks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051544498530-tq6imiprpp55bhi6pbike18vbupvvjju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgts8RQ-uXiPGG8L2_X7CQ3ar2JYKEgH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051544498530-tq6imiprpp55bhi6pbike18vbupvvjju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

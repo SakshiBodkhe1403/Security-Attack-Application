@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nestedScrollView"
+    android:background="@color/white"
+    android:padding="20dp"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/ac_logo"
+        android:paddingTop="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:gravity="left"
+        android:text="Name"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/green"
+        android:paddingBottom="0dp"/>
+
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:maxLines="1"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/green"
+        android:background="@drawable/border"
+        android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:gravity="left"
+        android:text="Email"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/green"
+        android:paddingBottom="0dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/Email"
+            android:inputType="text"
+            android:maxLines="1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/border"
+            android:textColor="@color/green"
+            android:paddingLeft="10dp"/>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:gravity="left"
+        android:text="Password"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:textColor="@color/green"
+        android:paddingBottom="0dp"/>
+
+     <EditText
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/password"
+         android:inputType="textPassword"
+         android:maxLines="1"
+         android:layout_marginTop="10dp"
+         android:textColor="@color/green"
+         android:paddingLeft="10dp"
+         android:background="@drawable/border"/>
+    <TextView
+            android:id="@+id/tv4"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:gravity="left"
+            android:text="Phone Number"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="@color/green"
+            android:paddingBottom="0dp"/>
+
+     <EditText
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:id="@+id/phone"
+         android:inputType="number"
+         android:maxLines="1"
+         android:layout_marginTop="10dp"
+         android:paddingLeft="10dp"
+         android:background="@drawable/border"
+         android:textColor="@color/green"/>
+
+    <Button
+        android:id="@+id/registerBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:textColor="@color/white"
+        android:background="@drawable/button_border"
+        android:text="Register" />
+
+   <TextView
+       android:id="@+id/createText"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="10dp"
+       android:gravity="center"
+       android:text="Already a member? Login"
+       android:textSize="16sp"
+       android:textColor="@color/green" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+       />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

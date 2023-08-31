@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.securityattacks.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.securityattacks.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.securityattacks.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
+    <fragment
+        android:id="@+id/nav_attack3"
+        android:name="com.example.securityattacks.ui.attack3.Attack3Fragment"
+        android:label="@string/menu_attack3"
+        tools:layout="@layout/attack3_fragment" />
+    <fragment
+        android:id="@+id/nav_attack4"
+        android:name="com.example.securityattacks.ui.attack4.Attack4Fragment"
+        android:label="@string/menu_attack4"
+        tools:layout="@layout/attack4_fragment" />
+    <fragment
+        android:id="@+id/nav_attack5"
+        android:name="com.example.securityattacks.ui.attack5.Attack5Fragment"
+        android:label="@string/menu_attack5"
+        tools:layout="@layout/attack5_fragment" />
+    <fragment
+        android:id="@+id/nav_attack6"
+        android:name="com.example.securityattacks.ui.attack6.Attack6Fragment"
+        android:label="@string/menu_attack6"
+        tools:layout="@layout/attack6_fragment" />
+    <fragment
+        android:id="@+id/nav_attack7"
+        android:name="com.example.securityattacks.ui.attack7.Attack7Fragment"
+        android:label="@string/menu_attack7"
+        tools:layout="@layout/attack7_fragment" />
+    <fragment
+        android:id="@+id/nav_attack8"
+        android:name="com.example.securityattacks.ui.attack8.Attack8Fragment"
+        android:label="@string/menu_attack8"
+        tools:layout="@layout/attack8_fragment" />
+    <fragment
+        android:id="@+id/nav_attack9"
+        android:name="com.example.securityattacks.ui.attack9.Attack9Fragment"
+        android:label="@string/menu_attack9"
+        tools:layout="@layout/attack9_fragment" />
+    <fragment
+        android:id="@+id/nav_attack10"
+        android:name="com.example.securityattacks.ui.attack10.Attack10Fragment"
+        android:label="@string/menu_attack10"
+        tools:layout="@layout/attack10_fragment" />
+    <fragment
+        android:id="@+id/nav_android"
+        android:name="com.example.securityattacks.ui.android.AndroidFragment"
+        android:label="Android Security"
+        tools:layout="@layout/android_fragment" />
+</navigation>
